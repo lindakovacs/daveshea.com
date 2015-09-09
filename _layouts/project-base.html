@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body class="page-project page-project-{{ page.slug }}">
+
+    {% include header.html %}
+
+	<header class="project-header">
+      <div class="wrapper">
+		<h1 class="project-title">{{ page.title }}</h1>
+      </div>
+	</header>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+
+		<div class="project">
+
+			<article class="project-content">
+				{% if page.wip %}
+
+				<div class="project-wip">
+					<h2 class="project-wip-title">Coming Soon</h2>
+					<p class="project-wip-text">In the meantime, view this project on <a href="{{ page.makerbase }}">makerbase</a></p>
+				</div>
+
+				{% else %}
+
+				{{ content }}
+
+				{% endif %}
+			</article>
+
+		</div>
+
+      </div>
+    </div>
+
+    {% include footer.html %}
+
+  </body>
+
+</html>

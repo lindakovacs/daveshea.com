@@ -1,0 +1,36 @@
+---
+layout: default
+home: true
+---
+
+<div class="grid">
+
+
+<section id="projects" class="project-section">
+  <div class="wrap">
+
+    <ul class="project-list">
+
+      {% assign pages = site.pages | sort:"weight"  %}
+
+      {% for page in pages %}
+        {% if page.project %}
+           <li class="project project-{{ page.slug }}">
+            {% if page.title %}
+            <a class="link" href="{{ page.url | prepend: site.baseurl }}">
+              <h2 class="project-title">
+                {{ page.title }}
+              </h2>
+              {% if page.date %}
+                <h3 class="project-date">{{ page.date }}{% if page.date-end %} &#8211; {{ page.date-end }}{% endif %}</h3>
+              {% endif %}
+            </a>
+            {% endif %}
+          </li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+
+  </div>
+
+</section>

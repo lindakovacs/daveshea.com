@@ -1,0 +1,371 @@
+//  -------------------------------------------
+//
+//      Individual Project customizations
+//      (colour & imagery)
+//
+//  -------------------------------------------
+
+
+
+//
+//  styleProject mixin
+//  assign base colour settings to a project's main listing and page header
+//
+@mixin styleProject(
+    $projectName,
+    $projectBGColour:$grey-colour,
+    $projectTextColour:$white,
+    $projectAccentColour:$accent-colour,
+    $projectSecondaryOpacity:0.1
+    ) {
+
+    // listing page styling
+    .project-#{$projectName} {
+        .project-title {
+            color: $projectTextColour;
+        }
+        .project-date {
+            color: rgba($projectTextColour, 0.7);
+        }
+    }
+
+    // individual project page styling
+    .page-project-#{$projectName} {
+        .site-title,
+        .site-title-back {
+            color: rgba($projectTextColour, 0.7);
+            transition: color $animation-timing ease-out;
+            &:hover, &:focus {
+                color: $projectTextColour;
+            }
+        }
+
+        .project-title {
+            color: $projectTextColour;
+        }
+
+		a {
+			color: $projectAccentColour;
+		}
+
+        img, .project-frame {
+            background-color: rgba($projectBGColour, 0.3);
+        }
+
+        .project-story {
+            background-color: rgba($projectBGColour, $projectSecondaryOpacity);
+        }
+
+        .project-wip-title {
+            color: $projectBGColour;
+        }
+
+        .site-footer {
+            color: $projectTextColour;
+            background-color: rgba($projectBGColour, 0.9);
+        }
+	}
+
+    // shared styling between both
+	.project-#{$projectName} .link,
+	.page-project-#{$projectName} .project-header {
+	    background-color: $projectBGColour;
+	}
+
+}
+
+
+//
+//  styleProjectImage mixin
+//  adjust a project's main image properties
+//
+@mixin styleProjectImage($projectName) {
+
+	.project-#{$projectName} .link::after,
+	.page-project-#{$projectName} .project-header {
+	    @content;
+	}
+}
+
+
+//
+//  Project settings: CSS Zen Garden
+//
+$zenTextColour: #d2dddb;
+$zenAccentColour: #0d8ba1;
+$zenBaseColour: #074c4c;
+@include styleProject("zen", $zenBaseColour, $zenTextColour, $zenAccentColour);
+@include styleProjectImage("zen") {
+
+    background-image: 
+        url(/i/projects/zen/noise.png),
+        url(/i/projects/zen/gridlines.png),
+        url(/i/projects/zen/contours.png),
+        url(/i/projects/zen/main.jpg);
+    background-repeat:
+        repeat,
+        repeat,
+        repeat,
+        no-repeat;
+    background-size: 
+        auto auto,
+        auto auto,
+        auto auto,
+        auto 100%;
+
+    @include screen-xsmall {
+        background-size: 
+            auto auto,
+            auto auto,
+            auto auto,
+            120% auto;
+    }
+    @include screen-small {
+        background-size: 
+            auto auto,
+            auto auto,
+            auto auto,
+            110% auto;
+    }
+    @include screen-large {    
+        background-size: 
+            auto auto,
+            auto auto,
+            auto auto,
+            100% auto;
+    }
+
+}
+
+
+
+//
+//  Project settings: Style & Class
+//
+$scTextColour: #fff;
+$scAccentColour: #ff502d;
+$scBaseColour: #6a3146;
+@include styleProject("style-class", $scBaseColour, $scTextColour, $scAccentColour);
+@include styleProjectImage("style-class") {
+    background-image: url(/i/projects/s&c/main.gif);
+}
+
+
+
+//
+//  Project settings: Farmhouse Fest
+//
+$fhfTextColour: #5a3213;
+$fhfAccentColour: #a26e6b;
+$fhfBaseColour: #ddc8b3;
+@include styleProject("farmhouse-fest", $fhfBaseColour, $fhfTextColour, $fhfAccentColour, 0.2);
+@include styleProjectImage("farmhouse-fest") {
+    background-image: url(/i/projects/fhf/main.jpg);
+}
+
+.page-project-farmhouse-fest .project-header {
+    background-size: auto 100%;
+    @include screen-large {    
+        background-size: 
+            auto 100%;
+    }
+}
+
+.project-farmhouse-fest {
+    .link:hover, .link:active {
+        .project-title, .project-date {
+            text-shadow: 0 0 10px rgba($fhfBaseColour, 0.5);
+        }
+    }
+}
+
+//
+//  Project settings: Nautical Disaster
+//
+$ndTextColour: #ea8d08;
+$ndAccentColour: #309acb;
+$ndBaseColour: #350d09;
+@include styleProject("nautical-disaster", $ndBaseColour, $ndTextColour, $ndAccentColour);
+@include styleProjectImage("nautical-disaster") {
+    background-image: 
+        linear-gradient(
+            to bottom,
+            rgba($ndBaseColour, 0.5) 0%,
+            rgba($ndBaseColour, 0.8) 100%
+        ),
+        url(/i/projects/nd/main3.min.jpg);
+    background-position: top center;
+}
+.page-project-nautical-disaster .project-header {
+    background-image: 
+        linear-gradient(
+            to bottom,
+            rgba($ndBaseColour, 0.95) 20%,
+            rgba($ndBaseColour, 0.5) 100%
+        ),
+        url(/i/projects/nd/main3.min.jpg);
+}
+
+
+
+//
+//  Project settings: mezzoblue
+//
+$mezzoblueTextColour: #fff;
+$mezzoblueAccentColour: #f19633;
+$mezzoblueBaseColour: #53a6f2;
+@include styleProject("mezzoblue", $mezzoblueBaseColour, $mezzoblueTextColour, $mezzoblueAccentColour);
+@include styleProjectImage("mezzoblue") {
+    background-image:
+        linear-gradient(
+            to bottom,
+            rgba($mezzoblueBaseColour, 0.7) 0%,
+            rgba($mezzoblueBaseColour, 0.85) 100%
+        ),
+        url(/i/projects/mezzoblue/header.jpg);
+    // background-size: 120% auto;
+}
+
+
+//
+//  Project settings: Elevation
+//
+$elevationTextColour: #542a06;
+$elevationAccentColour: #712113;
+$elevationBaseColour: #b05631;
+@include styleProject("elevation", $elevationBaseColour, $elevationTextColour, $elevationAccentColour);
+@include styleProjectImage("elevation") {
+    background-image:
+        linear-gradient(
+            to right,
+            rgba($elevationBaseColour, 0) 0%,
+            rgba($elevationBaseColour, 1) 100%
+        ),
+        url(/i/projects/elevation/header.jpg);
+}
+.page-project-elevation .project-header {
+    background-image: 
+        linear-gradient(
+            to bottom,
+            rgba($elevationBaseColour, 0.8) 0%,
+            rgba($elevationBaseColour, 0.1) 100%
+        ),
+        url(/i/projects/elevation/header.jpg);
+}
+.project-elevation {
+    .link:hover, .link:active {
+        .project-title, .project-date {
+            text-shadow: 0 0 5px rgba($elevationBaseColour, 1);
+        }
+    }
+}
+
+//
+//  Project settings: PaintbrushJS
+//
+$paintbrushTextColour: #fff;
+$paintbrushAccentColour: #e5a33b;
+$paintbrushBaseColour: #446a0b;
+@include styleProject("paintbrush", $paintbrushBaseColour, $paintbrushTextColour, $paintbrushAccentColour);
+@include styleProjectImage("paintbrush") {
+    background-image: url(/i/projects/paintbrush/main2.png);
+}
+.page-project-paintbrush .project-header {
+    background-image: 
+        linear-gradient(
+            to bottom,
+            rgba($paintbrushBaseColour, 0.4) 0%,
+            rgba($paintbrushBaseColour, 0.4) 100%
+        ),
+        url(/i/projects/paintbrush/main2.min.png);
+}
+
+
+//
+//  Project settings: Chalkwork
+//
+$chalkworkTextColour: #fff;
+$chalkworkAccentColour: #ba7334;
+$chalkworkBaseColour: #77231f;
+@include styleProject("chalkwork", $chalkworkBaseColour, $chalkworkTextColour, $chalkworkAccentColour);
+@include styleProjectImage("chalkwork") {
+    background-image: 
+        linear-gradient(
+            to bottom,
+            rgba($chalkworkBaseColour, 0.8) 0%,
+            rgba($chalkworkBaseColour, 0.6) 100%
+        ),
+        url(/i/projects/chalkwork/main4.min.jpg);
+    background-size:
+        100% auto,
+        140% auto;
+}
+
+
+//
+//  Project settings: Web Directions North
+//
+$wdnTextColour: #fff;
+$wdnAccentColour: #b88433;
+$wdnBaseColour: #1f4996;
+@include styleProject("wdn", $wdnBaseColour, $wdnTextColour, $wdnAccentColour);
+@include styleProjectImage("wdn") {
+    background-image: 
+        linear-gradient(
+            to bottom,
+            rgba($wdnBaseColour, 0.5) 0%,
+            rgba($wdnBaseColour, 0.5) 100%
+        ),
+        url(/i/projects/wdn/main.min.jpg);
+}
+
+
+//
+//  Project settings: Zen of CSS Design
+//
+$zenbookTextColour: #fff;
+$zenbookAccentColour: #FA0;
+$zenbookBaseColour: #a57843;
+@include styleProject("zen-book", $zenbookBaseColour, $zenbookTextColour, $zenbookAccentColour);
+@include styleProjectImage("zen-book") {
+    background-image:
+            linear-gradient(
+            to bottom,
+            rgba($zenbookBaseColour, 0.8) 0%,
+            rgba($zenbookBaseColour, 0.9) 100%
+        ),
+        url(/i/projects/zen-book/header.jpg);
+    background-size:
+        100% auto,
+        140% auto;
+}
+.page-project-zen-book .project-header {
+    background-image:
+            linear-gradient(
+            to bottom,
+            rgba($zenbookBaseColour, 0.8) 0%,
+            rgba($zenbookBaseColour, 0.9) 100%
+        ),
+        url(/i/projects/zen-book/header.jpg);
+    background-size:
+        100% auto,
+        100% auto;
+}
+
+
+//
+//  Project settings: CSS Sprites
+//
+$spritesTextColour: #fff;
+$spritesAccentColour: #e8800f;
+$spritesBaseColour: #004b91;
+@include styleProject("css-sprites", $spritesBaseColour, $spritesTextColour, $spritesAccentColour);
+@include styleProjectImage("css-sprites") {
+    background-image: 
+            linear-gradient(
+            to bottom,
+            rgba($spritesBaseColour, 0.5) 0%,
+            rgba($spritesBaseColour, 0.8) 100%
+        ),
+        url(/i/projects/sprites/header.jpg);
+}

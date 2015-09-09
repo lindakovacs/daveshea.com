@@ -1,0 +1,46 @@
+//
+//	Reset some basic elements
+//
+body, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, hr,
+dl, dd, ol, ul, figure {
+    margin: 0;
+    padding: 0;
+}
+
+
+//
+//	Restore sanity
+//
+* {
+	box-sizing: border-box;
+}
+
+
+//
+//	Set `margin-bottom` to maintain vertical rhythm
+//
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre,
+ul, ol, dl, figure,
+%vertical-rhythm {
+    margin-bottom: $spacing-unit / 2;
+}
+
+
+body {
+    color: $text-colour;
+    background: #fff;
+}
+
+a {
+	color: $accent-colour;
+}
+
+hr {
+	clear: both;
+	height: 0;
+	margin: 3rem 0;
+	border: solid 1px $grey-colour-light;
+	border-width: 1px 0 0 0;
+}

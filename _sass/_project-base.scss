@@ -1,0 +1,397 @@
+//  -------------------------------------------
+//
+//      Project base layout & configuration
+//
+//  -------------------------------------------
+
+
+
+
+//
+//  general pieces
+//
+
+.project-title, .project-date {
+    margin: 0;
+}
+
+
+//
+//  front page project listing
+//
+
+.project-list {
+    .project {
+        margin: 0 0 0.25rem 0;
+        list-style: none;
+
+        @include screen-large {
+            margin-bottom: 1rem;
+        }
+    }
+
+    .project-title, .project-date {
+        position: relative;
+        z-index: 20;
+        text-transform: uppercase;
+    }
+
+    .project-title {
+        text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    }
+
+
+    .link {
+        display: block;
+        overflow: hidden;
+
+        position: relative;
+        padding: 1rem;
+
+        @include screen-xsmall {
+            padding: 2rem;
+        }
+
+        @include screen-small {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            min-height: 150px;
+            padding: 2rem 3rem;
+
+            .project-date {
+                text-align: right;
+                padding-left: 0.5rem;
+            }
+        }
+        @include screen-large {
+            min-height: 200px;
+        }
+
+        text-decoration: none;
+
+        &::before {
+            content: "";
+            position: absolute;
+
+            display: block;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: 10;
+
+            opacity: 0.1;
+            transition: opacity $animation-timing ease-out;
+
+            background-color: rgba(0, 0, 0, 0.2);
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            display: block;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: 5;
+
+            opacity: 0.5;
+
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: 100% auto;
+
+            transition: all $animation-timing ease-out;
+
+            -webkit-filter: blur($blur-value);
+            -moz-filter: blur($blur-value);
+            -ms-filter: blur($blur-value);
+            -o-filter: blur($blur-value);
+            filter: blur($blur-value);
+        }
+
+        &:hover, &:active {
+
+            .project-title, .project-date {
+                text-shadow: 0 1px 8px rgba(0, 0, 0, 0.25);
+            }
+
+            &::before {
+                opacity: 1;
+            }
+            &::after {
+                opacity: 1;
+
+                -webkit-filter: blur(0);
+                -moz-filter: blur(0);
+                -ms-filter: blur(0);
+                -o-filter: blur(0);
+                filter: blur(0);
+            }
+        }
+    }
+
+}
+
+
+
+//
+//  individual project pages
+//
+
+.page-project {
+
+    .site-title {
+        &::before {
+            content: "‹ ";
+        }
+    }
+    
+    .site-header {
+        margin-bottom: -6rem;
+    }
+
+    .project-title {
+        text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    }
+
+}
+
+.project-section .wrap {
+    padding: 1rem 2rem;
+}
+
+
+@include screen-small {
+    .page-project .site-title {
+        &::before {
+            content: none;
+        }
+    }
+}
+
+@include screen-large {
+    .project-section .wrap {
+        width: $peak-width;
+        padding: 2rem 0;
+        margin: 0 auto;
+    }
+    .page-project .project-section .wrap {
+        padding: 2rem 5rem;
+    }
+}
+
+.project-header {
+
+    padding-top: 6rem;
+    padding-bottom: 2rem;
+
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+
+    .wrapper {
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        min-height: 10vh;
+    }
+    @include screen-small {
+        .wrapper {
+            min-height: 15vh;
+        }
+    }
+    @include screen-medium {
+        .wrapper {
+            min-height: 25vh;
+        }
+    }
+
+}
+
+.project-story {
+    padding: 2rem 0;
+    background-image: url(/i/bg-pattern1.min.png);
+}
+
+
+.project-elsewhere {
+    padding: 2rem 0;
+}
+
+
+
+//
+//
+//  content templates for projects
+//
+//
+
+//
+//  summary block
+//
+.project-summary {
+
+    margin: 2rem 0 4rem 0;
+
+    p.project-role {
+        margin-top: 0;
+        text-align: left;
+    }
+
+}
+
+
+//
+//  Reusable Component: gallery configurations
+//
+.project-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 2rem 0 0 0;
+    list-style: none;
+}
+
+.project-thumb {
+    margin-bottom: 2rem;
+    img {
+        opacity: 0.9;
+        max-width: 100%;
+        padding: 1px;
+        border-radius: 2px;
+        transition: opacity $animation-timing ease-out;
+
+        &:hover, &:focus {
+            opacity: 1;
+        }
+    }
+}
+.project-thumb-caption {
+    @include type-alternate-italic;
+    margin: 0.5rem 0 0 0;
+}
+
+
+// default grouping for every screen
+.project-gallery-2up, .project-gallery-4up, .project-gallery-4up-large,
+.project-gallery-6up, .project-gallery-8up, .project-gallery-12up {
+    .project-thumb {
+        flex: 0 1 48%;
+    }
+}
+.project-gallery-5up, .project-gallery-10up {
+    .project-thumb {
+        flex: 0 1 40%;
+    }
+}
+
+// alternate groupings for larger screens
+@include screen-small {
+    .project-gallery-3up, .project-gallery-9up {
+        .project-thumb {
+            flex: 0 1 30%;
+        }
+    }
+
+    .project-gallery-4up, .project-gallery-8up, .project-gallery-12up {
+        .project-thumb {
+            flex: 0 1 23%;
+        }
+    }
+
+
+    .project-gallery-6up {
+        .project-thumb {
+            flex: 0 1 30%;
+        }
+    }
+
+    .project-gallery-5up, .project-gallery-10up {
+        .project-thumb {
+            flex: 0 1 17.5%;
+        }
+    }
+}
+
+
+//
+//  browser chrome
+//
+$browser-bar: 50px;
+
+// no chrome for tiny screens
+.project-browser-frame {
+    .project-frame {
+        padding: 5px 2px 2px 2px;
+    }
+}
+
+// everyone else though
+@include screen-xsmall {
+    .project-browser-frame {
+
+        z-index: 5;
+        position: relative;
+
+        img {
+            display: block;
+            padding: 0;
+            margin: 0;
+            border-radius: 1px;
+            border: solid 1px rgba($white, 0.75);
+        }
+        .project-frame {
+            padding: $browser-bar 2px 2px;
+            border-radius: 5px;
+        }
+
+        // need three pseudo-elements to do this, so we're gonna cheat
+        &::before, &::after {
+            content: "";
+            display: block;
+            position: absolute;
+            z-index: 10;
+        }
+        &::before {
+            top: 17px;
+            left: 19px;
+            width: 58px;
+            height: 18px;
+            background-image: url(/i/ui-browser-arrows.min.png);
+            background-repeat: no-repeat;
+        }
+        &::after {
+            top: 12px;
+            right: 10px;
+
+            width: calc(100% - 110px);
+            height: 27px;
+
+            border-radius: 4px;
+            background-color: rgba($white, 0.25);
+        }
+
+    }
+}
+
+//
+//  project work-in-progress variations
+//
+.project-wip {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 60vh;
+}
+.project-wip-title {
+    margin-bottom: 0.5rem;
+}
+.project-wip-text {
+    max-width: 15rem;
+    text-align: center;
+    @include type-alternate-italic;
+}

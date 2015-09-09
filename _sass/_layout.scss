@@ -1,0 +1,199 @@
+//
+//  Base responsive layout
+//
+.site-header .wrapper,
+.site-footer .wrapper,
+.project-header .wrapper,
+.page-content .wrapper {
+    margin: 0 2rem;
+
+    @include screen-large {
+        max-width: $peak-width;
+        margin: 0 auto;
+    }
+}
+
+
+
+
+
+
+
+//
+//  Global site header
+//
+.site-header {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+.site-title {
+    display: inline-block;
+    padding-top: 3rem;
+    color: #000;
+}
+.site-title-back {
+    display: none;
+    text-decoration: none;
+    padding: 0.25rem 1rem;
+    border-radius: 2rem;
+
+    transition: background-color $animation-timing ease-out;
+
+    &:hover, &:focus {
+        background-color: rgba($white, 0.1);
+    }
+}
+
+@include screen-small {
+    .site-header {
+        margin-top: 3rem;
+        text-align: left;
+    }
+    .site-title {
+        padding-top: 0;
+    }
+    .site-description, .site-title-back {
+        display: inline-block;
+        float: right;
+    }
+}
+.site-description {
+    margin: 0;
+    color: $grey-colour;
+
+    line-height: 2rem;
+    text-transform: uppercase;
+}
+
+
+//
+// General content page formatting
+//
+.page-content {
+    padding: 0 0 2rem 0;
+
+    // probably problematic, but I feel too lazy to apply this styling to the general case atm
+    li {
+        margin: 0 0 1rem 2rem;
+    }
+
+}
+
+
+
+
+//
+//  Global site footer
+//
+.site-footer {
+    padding: 3rem 0;
+    text-align: center;
+    background-color: $grey-colour-light;
+    background-image: url(/i/bg-pattern2.min.png);
+
+    p {
+        margin-bottom: 0;
+    }
+    span {
+        opacity: 0.7;
+    }
+
+    .link-list {
+        display: block;
+        margin: 0 0 2rem 0;
+    }
+    .link {
+        display: inline;
+        flex: none;
+        padding: 0 1rem;
+        vertical-align: bottom;
+    }
+
+    .link-twitter, .link-makerbase, .link-github {
+        a::before {
+            display: inline-block;
+            content: "";
+            width: 20px;
+            height: 20px;
+            margin-right: 0.5rem;
+            vertical-align: middle;
+            background-size: 100% 100%;
+            opacity: 0.3;
+        }
+    }
+
+    .link-twitter a::before {
+        background-image: url(/i/ico-twitter.png);
+    }
+    .link-makerbase a::before {
+        background-image: url(/i/ico-makerbase.png);
+    }
+    .link-github a::before {
+        background-image: url(/i/ico-github.png);
+    }
+
+
+}
+
+
+//
+// Specific page: About
+//
+
+.page-about {
+    .page-title {
+        margin-bottom: 0;
+    }
+}
+.about-header {
+    padding: 1rem 0;
+    img {
+        float: left;
+        position: relative;
+        top: 0.5rem;
+
+        width: 64px;
+        margin: 0 1rem 2rem 0;
+        border-radius: 64px;
+    }
+}
+
+
+//
+// Reusable Component: link blocks
+//
+
+.link-list {
+    margin: 0;
+    list-style: none;
+}
+.link {
+    padding: 0 1rem 0.5rem 0;
+    font-size: 1rem;
+    vertical-align: baseline;
+    :link {
+        text-decoration: none;
+    }
+    :hover, :active {
+        text-decoration: underline;
+    }
+}
+
+@include screen-medium {
+    .link-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .link {
+        padding: 0 2rem 0.5rem 0;
+    }
+    .link-list-2up .link {
+        flex: 0 0 50%;
+    }
+    .link-list-3up .link {
+        flex: 0 0 33%;
+    }
+}
+
+

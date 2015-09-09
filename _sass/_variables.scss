@@ -1,0 +1,81 @@
+$base-font-family:      "soleil", sans-serif;
+$base-font-size:        1.2rem;
+$small-font-size:       $base-font-size * 0.875;
+$base-line-height:      1.6;
+
+$peak-width:            960px;
+$spacing-unit:          2rem;
+$grid-unit:             176px;
+$gutter-unit:           20px;
+
+$text-colour:           #333;
+$accent-colour:         #000;
+
+$grey-colour:           #beb3ae;
+$grey-colour-light:     lighten($grey-colour, 10%);
+$grey-colour-lighter:   lighten($grey-colour, 15%);
+$grey-colour-dark:      darken($grey-colour, 25%);
+
+$white:       					#fff;
+
+$blur-value:            3px;
+$animation-timing:      0.25s;
+
+
+/*
+
+    Base media query mixins
+
+*/
+
+$xxsmall: 320px;
+$xsmall: 480px;
+$small: 640px;
+$medium: 800px;
+$large: 960px;
+$xlarge: 1120px;
+$xxlarge: 1280px;
+
+@mixin screen-xxlarge {
+  @media (min-width: #{$xxlarge + 1px}) {
+    @content;
+  }
+}
+@mixin screen-xlarge {
+  @media (min-width: #{$xlarge + 1px}) {
+    @content;
+  }
+}
+@mixin screen-large {
+  @media (min-width: #{$large + 1px}) {
+    @content;
+  }
+}
+
+@mixin screen-medium {
+  @media (min-width: #{$medium + 1px}) {
+    @content;
+  }
+}
+@mixin screen-small {
+  @media (min-width: #{$small + 1px}) {
+    @content;
+  }
+}
+@mixin screen-xsmall {
+  @media (min-width: #{$xsmall + 1px}) {
+    @content;
+  }
+}
+@mixin screen-xxsmall {
+  @media (min-width: #{$xxsmall + 1px}) {
+    @content;
+  }
+}
+
+
+@mixin bordered {
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+    border-bottom: dotted 1px $grey-colour-light;  
+}

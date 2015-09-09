@@ -1,0 +1,12 @@
+# Site settings
+title: Dave Shea
+email: mezzoblue@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  A selection of projects
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://daveshea.com" # the base hostname & protocol for your site
+twitter_username: mezzoblue
+github_username:  mezzoblue
+
+# Build settings
+markdown: kramdown

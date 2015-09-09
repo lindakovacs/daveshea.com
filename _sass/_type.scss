@@ -1,0 +1,176 @@
+/*
+
+    Typography mixins
+
+*/
+
+
+
+
+/*
+
+ Base type declaration
+
+*/
+@mixin type-base {
+    font-family: $base-font-family;
+    font-size: $base-font-size;
+    line-height: $base-line-height;
+    font-weight: normal;
+    -webkit-text-size-adjust: 100%;
+}
+
+@mixin type-base-small {
+    font-size: $base-font-size * 0.875;
+    font-weight: normal;
+}
+
+@mixin type-base-bold {
+    font-weight: 800;
+}
+
+
+@mixin type-alternate {
+    font-family: "clavo", serif;
+    font-weight: 300;
+}
+@mixin type-alternate-italic {
+    @include type-alternate;
+    font-style: italic;
+}
+
+@mixin type-header-primary {
+    font-size: $base-font-size * 1.25;
+}
+@mixin type-header-secondary {
+    font-size: $base-font-size;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+@mixin type-header-small {
+    font-size: $base-font-size * 0.875;
+    font-weight: normal;
+}
+
+
+body, p {
+    @include type-base;
+}
+
+h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: $base-font-size * 1.5;
+}
+h2 {
+    font-size: $base-font-size * 1.2;
+}
+h3 {
+    @include type-header-primary;
+}
+h4 {
+    font-size: $base-font-size * 1.09375;
+}
+h5 {
+    @include type-header-secondary;
+}
+h6 {
+    @include type-header-small;
+}
+
+em {
+    @include type-alternate-italic;
+}
+
+
+@include screen-small {
+    h1 {
+        font-size: $base-font-size * 2;
+    }
+    h2 {
+        font-size: $base-font-size * 1.5;
+    }
+}
+
+
+//
+//  Global site header
+//
+.site-title {
+    letter-spacing: 0.3rem;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+//  front page project listing
+.project-list {
+    line-height: 1.2;
+    .project-title {
+        font-weight: bold;
+    }
+    @include screen-small {
+        .project-title {
+            font-size: 2rem;
+        }
+    }
+}
+.site-description, .project-date {
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+//  individual project pages
+.page-project {
+    .project-title {
+        font-size: 2rem;
+        line-height: 1.2;
+        text-align: center;
+        @include type-alternate;
+    }
+    @include screen-small {
+        .project-title {
+            font-size: 3rem;
+            line-height: 1.6;
+            text-align: left;
+        }
+    }
+}
+
+//  project summary block
+.project-summary p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    &.project-role {
+        font-size: 1rem;
+    }
+}
+
+
+em, .project-role, .site-footer p {
+    font-size: 1rem;
+    @include type-alternate-italic;
+}
+
+
+// making everything larger on bigger screens
+@include screen-medium {
+    .site-description, .project-date {
+        font-size: 1.5rem;
+    }
+    .page-project {
+        .project-title {
+            font-size: 4rem;
+            letter-spacing: -0.1rem;
+        }
+    }
+    .project-summary p {
+        font-size: 1.8rem;
+        line-height: 2;
+    }
+}
