@@ -899,22 +899,22 @@ em, .project-role, .site-footer p {
 .page-project-css-sprites a {
   color: #e8800f; }
 .page-project-css-sprites img, .page-project-css-sprites .project-frame {
-  background-color: rgba(0, 75, 145, 0.3); }
+  background-color: rgba(119, 17, 51, 0.3); }
 .page-project-css-sprites .project-story {
-  background-color: rgba(0, 75, 145, 0.1); }
+  background-color: rgba(119, 17, 51, 0.1); }
 .page-project-css-sprites .project-wip-title {
-  color: #004b91; }
+  color: #713; }
 .page-project-css-sprites .site-footer {
   color: #fff;
-  background-color: rgba(0, 75, 145, 0.9); }
+  background-color: rgba(119, 17, 51, 0.9); }
 
 .project-css-sprites .link,
 .page-project-css-sprites .project-header {
-  background-color: #004b91; }
+  background-color: #713; }
 
 .project-css-sprites .link::after,
 .page-project-css-sprites .project-header {
-  background-image: linear-gradient(to bottom, rgba(0, 75, 145, 0.5) 0%, rgba(0, 75, 145, 0.8) 100%), url(/i/projects/sprites/main.min.jpg); }
+  background-image: linear-gradient(to bottom, rgba(119, 17, 51, 0.7) 0%, rgba(119, 17, 51, 0.9) 100%), url(/i/projects/sprites/main2.min.png); }
 
 /**
  * Syntax highlighting styles
