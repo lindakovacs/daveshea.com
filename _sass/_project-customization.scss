@@ -114,21 +114,7 @@ $zenBaseColour: #074c4c;
         auto 100%;
 
     @include screen-xsmall {
-        background-size: 
-            auto auto,
-            auto auto,
-            auto auto,
-            120% auto;
-    }
-    @include screen-small {
-        background-size: 
-            auto auto,
-            auto auto,
-            auto auto,
-            110% auto;
-    }
-    @include screen-large {    
-        background-size: 
+        background-size:
             auto auto,
             auto auto,
             auto auto,
@@ -147,7 +133,7 @@ $scAccentColour: #ff502d;
 $scBaseColour: #6a3146;
 @include styleProject("style-class", $scBaseColour, $scTextColour, $scAccentColour);
 @include styleProjectImage("style-class") {
-    background-image: url(/i/projects/s&c/main.gif);
+    background-image: url(/i/projects/s&c/main2.min.png);
 }
 
 
@@ -160,7 +146,7 @@ $fhfAccentColour: #a26e6b;
 $fhfBaseColour: #ddc8b3;
 @include styleProject("farmhouse-fest", $fhfBaseColour, $fhfTextColour, $fhfAccentColour, 0.2);
 @include styleProjectImage("farmhouse-fest") {
-    background-image: url(/i/projects/fhf/main.jpg);
+    background-image: url(/i/projects/fhf/main2.min.jpg);
 }
 
 .page-project-farmhouse-fest .project-header {
@@ -193,7 +179,7 @@ $ndBaseColour: #350d09;
             rgba($ndBaseColour, 0.5) 0%,
             rgba($ndBaseColour, 0.8) 100%
         ),
-        url(/i/projects/nd/main3.min.jpg);
+        url(/i/projects/nd/main4.min.jpg);
     background-position: top center;
 }
 .page-project-nautical-disaster .project-header {
@@ -203,7 +189,7 @@ $ndBaseColour: #350d09;
             rgba($ndBaseColour, 0.95) 20%,
             rgba($ndBaseColour, 0.5) 100%
         ),
-        url(/i/projects/nd/main3.min.jpg);
+        url(/i/projects/nd/main4.min.jpg);
 }
 
 
@@ -222,7 +208,7 @@ $mezzoblueBaseColour: #53a6f2;
             rgba($mezzoblueBaseColour, 0.7) 0%,
             rgba($mezzoblueBaseColour, 0.85) 100%
         ),
-        url(/i/projects/mezzoblue/header.jpg);
+        url(/i/projects/mezzoblue/main2.min.jpg);
     // background-size: 120% auto;
 }
 
@@ -241,7 +227,7 @@ $elevationBaseColour: #b05631;
             rgba($elevationBaseColour, 0) 0%,
             rgba($elevationBaseColour, 1) 100%
         ),
-        url(/i/projects/elevation/header.jpg);
+        url(/i/projects/elevation/main3.min.png);
 }
 .page-project-elevation .project-header {
     background-image: 
@@ -250,7 +236,7 @@ $elevationBaseColour: #b05631;
             rgba($elevationBaseColour, 0.8) 0%,
             rgba($elevationBaseColour, 0.1) 100%
         ),
-        url(/i/projects/elevation/header.jpg);
+        url(/i/projects/elevation/main3.min.png);
 }
 .project-elevation {
     .link:hover, .link:active {
@@ -268,7 +254,7 @@ $paintbrushAccentColour: #e5a33b;
 $paintbrushBaseColour: #446a0b;
 @include styleProject("paintbrush", $paintbrushBaseColour, $paintbrushTextColour, $paintbrushAccentColour);
 @include styleProjectImage("paintbrush") {
-    background-image: url(/i/projects/paintbrush/main2.png);
+    background-image: url(/i/projects/paintbrush/main3.min.jpg);
 }
 .page-project-paintbrush .project-header {
     background-image: 
@@ -277,7 +263,7 @@ $paintbrushBaseColour: #446a0b;
             rgba($paintbrushBaseColour, 0.4) 0%,
             rgba($paintbrushBaseColour, 0.4) 100%
         ),
-        url(/i/projects/paintbrush/main2.min.png);
+        url(/i/projects/paintbrush/main3.min.jpg);
 }
 
 
@@ -295,7 +281,7 @@ $chalkworkBaseColour: #77231f;
             rgba($chalkworkBaseColour, 0.8) 0%,
             rgba($chalkworkBaseColour, 0.6) 100%
         ),
-        url(/i/projects/chalkwork/main4.min.jpg);
+        url(/i/projects/chalkwork/main5.min.jpg);
     background-size:
         100% auto,
         140% auto;
@@ -316,7 +302,7 @@ $wdnBaseColour: #1f4996;
             rgba($wdnBaseColour, 0.5) 0%,
             rgba($wdnBaseColour, 0.5) 100%
         ),
-        url(/i/projects/wdn/main.min.jpg);
+        url(/i/projects/wdn/main3.min.jpg);
 }
 
 
@@ -334,7 +320,7 @@ $zenbookBaseColour: #a57843;
             rgba($zenbookBaseColour, 0.8) 0%,
             rgba($zenbookBaseColour, 0.9) 100%
         ),
-        url(/i/projects/zen-book/header.jpg);
+        url(/i/projects/zen-book/header2.min.jpg);
     background-size:
         100% auto,
         140% auto;
@@ -346,7 +332,7 @@ $zenbookBaseColour: #a57843;
             rgba($zenbookBaseColour, 0.8) 0%,
             rgba($zenbookBaseColour, 0.9) 100%
         ),
-        url(/i/projects/zen-book/header.jpg);
+        url(/i/projects/zen-book/header2.min.jpg);
     background-size:
         100% auto,
         100% auto;
@@ -367,5 +353,5 @@ $spritesBaseColour: #004b91;
             rgba($spritesBaseColour, 0.5) 0%,
             rgba($spritesBaseColour, 0.8) 100%
         ),
-        url(/i/projects/sprites/header.jpg);
+        url(/i/projects/sprites/main.min.jpg);
 }
