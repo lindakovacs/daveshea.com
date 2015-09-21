@@ -198,8 +198,8 @@ $ndBaseColour: #350d09;
 //  Project settings: mezzoblue
 //
 $mezzoblueTextColour: #fff;
-$mezzoblueAccentColour: #f19633;
-$mezzoblueBaseColour: #53a6f2;
+$mezzoblueAccentColour: #f16b38;
+$mezzoblueBaseColour: #3069a1;
 @include styleProject("mezzoblue", $mezzoblueBaseColour, $mezzoblueTextColour, $mezzoblueAccentColour);
 @include styleProjectImage("mezzoblue") {
     background-image:

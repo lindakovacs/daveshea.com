@@ -672,24 +672,24 @@ em, .project-role, .site-footer p {
 .page-project-mezzoblue .project-title {
   color: #fff; }
 .page-project-mezzoblue a {
-  color: #f19633; }
+  color: #f16b38; }
 .page-project-mezzoblue img, .page-project-mezzoblue .project-frame {
-  background-color: rgba(83, 166, 242, 0.3); }
+  background-color: rgba(48, 105, 161, 0.3); }
 .page-project-mezzoblue .project-story {
-  background-color: rgba(83, 166, 242, 0.1); }
+  background-color: rgba(48, 105, 161, 0.1); }
 .page-project-mezzoblue .project-wip-title {
-  color: #53a6f2; }
+  color: #3069a1; }
 .page-project-mezzoblue .site-footer {
   color: #fff;
-  background-color: rgba(83, 166, 242, 0.9); }
+  background-color: rgba(48, 105, 161, 0.9); }
 
 .project-mezzoblue .link,
 .page-project-mezzoblue .project-header {
-  background-color: #53a6f2; }
+  background-color: #3069a1; }
 
 .project-mezzoblue .link::after,
 .page-project-mezzoblue .project-header {
-  background-image: linear-gradient(to bottom, rgba(83, 166, 242, 0.7) 0%, rgba(83, 166, 242, 0.85) 100%), url(/i/projects/mezzoblue/main2.min.jpg); }
+  background-image: linear-gradient(to bottom, rgba(48, 105, 161, 0.7) 0%, rgba(48, 105, 161, 0.85) 100%), url(/i/projects/mezzoblue/main2.min.jpg); }
 
 .project-elevation .project-title {
   color: #542a06; }
