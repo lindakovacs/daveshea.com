@@ -107,6 +107,10 @@
         flex: none;
         padding: 0 1rem;
         vertical-align: bottom;
+
+        a {
+            color: rgba(0, 0, 0, 0.5);
+        }
     }
 
     .link-twitter, .link-makerbase, .link-github {
@@ -139,14 +143,18 @@
 //
 // Specific page: About
 //
-
 .page-about {
-    .page-title {
-        margin-bottom: 0;
+    .wrapper {
+        @include screen-large {
+            padding: 0 5rem;
+        }
     }
 }
 .about-header {
-    padding: 1rem 0;
+    padding: 3rem 0;
+    margin: 3rem 0;
+    background-color: $grey-colour-light;
+    background-image: url(/i/bg-pattern1.min.png);
     img {
         float: left;
         position: relative;
@@ -155,6 +163,19 @@
         width: 64px;
         margin: 0 1rem 2rem 0;
         border-radius: 64px;
+    }
+    .page-title {
+        margin-bottom: 0;
+    }
+    .wrapper {
+        margin: 0 2rem;
+
+        @include screen-large {
+            max-width: $peak-width;
+            padding: 0 5rem;
+            margin: 0 auto;
+        }
+
     }
 }
 
