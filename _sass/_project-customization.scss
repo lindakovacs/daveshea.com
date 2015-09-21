@@ -149,14 +149,6 @@ $fhfBaseColour: #ddc8b3;
     background-image: url(/i/projects/fhf/main2.min.jpg);
 }
 
-.page-project-farmhouse-fest .project-header {
-    background-size: auto 100%;
-    @include screen-large {    
-        background-size: 
-            auto 100%;
-    }
-}
-
 .project-farmhouse-fest {
     .link:hover, .link:active {
         .project-title, .project-date {

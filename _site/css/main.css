@@ -623,12 +623,6 @@ em, .project-role, .site-footer p {
 .page-project-farmhouse-fest .project-header {
   background-image: url(/i/projects/fhf/main2.min.jpg); }
 
-.page-project-farmhouse-fest .project-header {
-  background-size: auto 100%; }
-  @media (min-width: 961px) {
-    .page-project-farmhouse-fest .project-header {
-      background-size: auto 100%; } }
-
 .project-farmhouse-fest .link:hover .project-title, .project-farmhouse-fest .link:hover .project-date, .project-farmhouse-fest .link:active .project-title, .project-farmhouse-fest .link:active .project-date {
   text-shadow: 0 0 10px rgba(221, 200, 179, 0.5); }
 
