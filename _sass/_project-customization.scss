@@ -168,20 +168,11 @@ $ndBaseColour: #350d09;
     background-image: 
         linear-gradient(
             to bottom,
-            rgba($ndBaseColour, 0.5) 0%,
-            rgba($ndBaseColour, 0.8) 100%
+            rgba($ndBaseColour, 0.4) 20%,
+            rgba($ndBaseColour, 0.2) 100%
         ),
-        url(/i/projects/nd/main4.min.jpg);
+        url(/i/projects/nd/main6.min.png);
     background-position: top center;
-}
-.page-project-nautical-disaster .project-header {
-    background-image: 
-        linear-gradient(
-            to bottom,
-            rgba($ndBaseColour, 0.95) 20%,
-            rgba($ndBaseColour, 0.5) 100%
-        ),
-        url(/i/projects/nd/main4.min.jpg);
 }
 
 
