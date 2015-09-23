@@ -181,20 +181,29 @@ $ndBaseColour: #350d09;
 //  Project settings: mezzoblue
 //
 $mezzoblueTextColour: #fff;
-$mezzoblueAccentColour: #f16b38;
+$mezzoblueAccentColour: #50a8ff;
 $mezzoblueBaseColour: #3069a1;
 @include styleProject("mezzoblue", $mezzoblueBaseColour, $mezzoblueTextColour, $mezzoblueAccentColour);
 @include styleProjectImage("mezzoblue") {
     background-image:
         linear-gradient(
             to bottom,
-            rgba($mezzoblueBaseColour, 0.7) 0%,
-            rgba($mezzoblueBaseColour, 0.85) 100%
+            rgba($mezzoblueBaseColour, 0.6) 0%,
+            rgba($mezzoblueBaseColour, 0.9) 100%
         ),
-        url(/i/projects/mezzoblue/main2.min.jpg);
-    // background-size: 120% auto;
+        url(/i/projects/mezzoblue/logo.min.png);
+    background-position:
+        0 0,
+        10% top;
+    background-size: 
+        auto auto,
+        300px 300px;
 }
-
+.page-project-mezzoblue .project-header {
+    background-size: 
+        auto auto,
+        400px 400px;
+}
 
 //
 //  Project settings: Elevation
