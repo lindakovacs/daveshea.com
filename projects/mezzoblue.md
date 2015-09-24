@@ -155,7 +155,7 @@ date-end: 2011
 	<ul class="link-list link-list-3up">
 
 		<li class="link link-site">
-			<a href="http://mezzoblue.com/">mezzoblue</a>
+			<a href="http://mezzoblue.com/">mezzoblue.com</a>
 		</li>
 		<li class="link link-twitter">
 			<a href="https://twitter.com/mezzobluedotcom">@mezzobluedotcom</a>
