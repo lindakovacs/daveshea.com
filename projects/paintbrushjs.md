@@ -130,7 +130,7 @@ date: 2010
 					</form>		
 
 				</div>
-				<p class="project-thumb-caption">PaintbrushJS live example</p>
+				<p class="project-thumb-caption">A live PaintbrushJS demo</p>
 			</li>
 		</ul>
 

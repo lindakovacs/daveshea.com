@@ -265,6 +265,9 @@ $paintbrushBaseColour: #446a0b;
     label {
         font-size: 1rem;
     }
+    img {
+        opacity: 1;
+    }
     .selector {
         display: inline-block;
         padding-left: 1.5rem;
@@ -304,7 +307,27 @@ $chalkworkBaseColour: #77231f;
         100% auto,
         140% auto;
 }
+.page-project-chalkwork {
+    .project-thumb {
+        margin-left: auto;
+        margin-right: auto;
 
+        text-align: center;
+
+        .project-frame {
+            display: inline-block;
+        }
+
+        img {
+            max-width: none;
+
+            @include screen-large {
+                width: auto;
+            }
+        }
+
+    }
+}
 
 //
 //  Project settings: Web Directions North
