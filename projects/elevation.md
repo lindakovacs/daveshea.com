@@ -1,6 +1,6 @@
 ---
 layout: project
-title: elevation
+title: Elevation
 permalink: /projects/elevation/
 makerbase: https://makerba.se/p/210678/elevation
 slug: elevation
