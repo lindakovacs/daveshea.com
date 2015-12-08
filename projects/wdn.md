@@ -99,7 +99,7 @@ date-end: 2008
 
 	</ul>
 
-	<p><em>Photo credits: <a href="https://www.flickr.com/photos/derekfeatherstone">Derek Featherstone</a>, <a href="https://www.flickr.com/photos/themattharris">Matt Harris</a>, <a href="https://www.flickr.com/photos/rocketcandy">Elizabeth Sahbrosa</a>, <a href="https://www.flickr.com/photos/varick">Varick Rosete</a>, <a href="https://www.flickr.com/photos/rongrn">Ron Green</a>, <a href="https://www.flickr.com/photos/andrewkumar">Andrew Kumar</a>, &amp; <a href="https://www.flickr.com/photos/polvero">Dustin Diaz</a> </em></p>
+	<p><em>Photo credits: <a href="https://www.flickr.com/photos/derekfeatherstone">Derek Featherstone</a>, <a href="https://www.flickr.com/photos/themattharris">Matt Harris</a>, <a href="https://www.flickr.com/photos/rocketcandy">Elizabeth Sarobhasa</a>, <a href="https://www.flickr.com/photos/varick">Varick Rosete</a>, <a href="https://www.flickr.com/photos/rongrn">Ron Green</a>, <a href="https://www.flickr.com/photos/andrewkumar">Andrew Kumar</a>, &amp; <a href="https://www.flickr.com/photos/polvero">Dustin Diaz</a> </em></p>
 
 
 	</div>

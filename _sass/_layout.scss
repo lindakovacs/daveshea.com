@@ -182,6 +182,7 @@
 .link-list {
     margin: 0;
     list-style: none;
+    text-align: center;
 }
 .link {
     padding: 0 1rem 0.5rem 0;
@@ -201,6 +202,7 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+        text-align: left;
     }
     .link {
         padding: 0 2rem 0.5rem 0;
