@@ -15,7 +15,7 @@ date-end: 2008
 	<div class="wrap">
 
 		<div class="project-summary">
-			<p>Two fantastic days of conference followed by a weekend of skiing and snowboarding in scenic Whistler, that drew almost 400 people both years it ran.</p>
+			<p>Two fantastic days of conference followed by a weekend of skiing and snowboarding in scenic Whistler, that drew almost 400 people in each of the two years it ran.</p>
 			<p class="project-role">Contribution: Organizer, Branding, Website</p>
 		</div>
 
@@ -55,7 +55,7 @@ date-end: 2008
 
 	<p>Fellow countryman Derek Featherstone and myself had spoken at the popular Web Directions event in Australia (then called Web Essentials) in years past, where we met organizers John Allsopp and Maxine Sherrin. In 2006 we decided between the four of us to form a partnership and start an event in Vancouver.</p>
 
-	<p>Web Directions North followed the common model for web conferences seen today &#8212; two days of talks with evening events. Our twist was that after the conference, we boarded attendees and speakers alike onto a bus and followed the event with two days of skiing, snowboarding, relaxing and socializing at Whistler.</p>
+	<p>Web Directions North followed the common model for web conferences seen today &#8212; two days of talks with evening events. Our twist was that after the conference, we took attendees and speakers alike up to Whistler for two days of skiing, snowboarding, relaxing and socializing after the event.</p>
 
 	<p>We ran WDN in 2007 and again in 2008, with an international crowd of almost 400 web designers and developers in attendance each year.</p>
 
