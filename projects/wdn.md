@@ -15,7 +15,7 @@ date-end: 2008
 	<div class="wrap">
 
 		<div class="project-summary">
-			<p>Two fantastic days of conference followed by a weekend of skiing and snowboarding in scenic Whistler, that drew almost 400 people in each of the two years it ran.</p>
+			<p>Two fantastic days of conference followed by a weekend of skiing and snowboarding in scenic Whistler with almost 400 people attending each of the two years it ran.</p>
 			<p class="project-role">Contribution: Organizer, Branding, Website</p>
 		</div>
 
@@ -51,11 +51,11 @@ date-end: 2008
 
 	<h2>The Story</h2>
 
-	<p>It's hard to remember now that by 2006, there were very few web conferences anywhere in the world focusing on web-native languages and design principles, let alone Canada. This was the conference that changed that.</p>
+	<p>It's hard to remember now that by 2006, there were very few web conferences anywhere in the world focusing on web-native languages and design principles, and especially not in Canada. This was the conference that changed that.</p>
 
-	<p>Fellow countryman Derek Featherstone and myself had spoken at the popular Web Directions event in Australia (then called Web Essentials) in years past, where we met organizers John Allsopp and Maxine Sherrin. In 2006 we decided between the four of us to form a partnership and start an event in Vancouver.</p>
+	<p>Fellow countryman Derek Featherstone and myself had spoken at the popular <a href="http://www.webdirections.org/">Web Directions</a> event in Australia (then called Web Essentials) in years past, where we met organizers John Allsopp and Maxine Sherrin. In 2006 we decided between the four of us to form a partnership and start an event in Vancouver.</p>
 
-	<p>Web Directions North followed the common model for web conferences seen today &#8212; two days of talks with evening events. Our twist was that after the conference, we took attendees and speakers alike up to Whistler for two days of skiing, snowboarding, relaxing and socializing after the event.</p>
+	<p>Web Directions North followed the common model for web conferences seen today &#8212; two days of talks with evening events. Our twist was that after the conference, we took attendees and speakers alike up to Whistler for two days of skiing, snowboarding, relaxing and socializing following the event.</p>
 
 	<p>We ran WDN in 2007 and again in 2008, with an international crowd of almost 400 web designers and developers in attendance each year.</p>
 
