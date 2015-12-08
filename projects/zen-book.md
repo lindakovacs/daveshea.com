@@ -50,11 +50,11 @@ date: 2004
 		</li>
 
 		<li class="project-thumb">
-			<img src="/i/projects/zen-book/intro.jpg" alt="" />
+			<img src="/i/projects/zen-book/photo2.jpg" alt="" />
 		</li>
 
 		<li class="project-thumb">
-			<img src="/i/projects/zen-book/intro.jpg" alt="" />
+			<img src="/i/projects/zen-book/photo3.jpg" alt="" />
 		</li>
 
 	</ul>
