@@ -351,7 +351,7 @@ $wdnBaseColour: #1f4996;
 //  Project settings: Zen of CSS Design
 //
 $zenbookTextColour: #fff;
-$zenbookAccentColour: #FA0;
+$zenbookAccentColour: #dc982e;
 $zenbookBaseColour: #a57843;
 @include styleProject("zen-book", $zenbookBaseColour, $zenbookTextColour, $zenbookAccentColour);
 @include styleProjectImage("zen-book") {
@@ -377,6 +377,9 @@ $zenbookBaseColour: #a57843;
     background-size:
         100% auto,
         100% auto;
+}
+.page-project-zen-book .project-thumb img {
+    opacity: 1;
 }
 
 
