@@ -10,10 +10,6 @@
   <meta name="description" content="A selection of projects
 ">
 
-  <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://daveshea.com/projects/paintbrush/">
-  <link rel="alternate" type="application/rss+xml" title="Dave Shea" href="http://daveshea.com/feed.xml" />
-  <link rel="shortcut icon" type="image/ico" href="/i/favicon.min.png" />
 
   <meta name="twitter:card" content="summary">
   <meta name="twitter:site" content="@mezzoblue">
@@ -22,6 +18,11 @@
   <meta name="twitter:description" property="og:description" content="A selection of projects">
   <meta name="twitter:image" property="og:image" content="http://daveshea.com/i/favicon.min.png">
 
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="http://daveshea.com/projects/paintbrush/">
+  <link rel="alternate" type="application/rss+xml" title="Dave Shea" href="http://daveshea.com/feed.xml" />
+  <link rel="shortcut icon" type="image/ico" href="/i/favicon.min.png" />
 
   <script src="//use.typekit.net/pfi3lqq.js"></script>
   <script>try{Typekit.load({ async: true });}catch(e){}</script>
@@ -198,9 +199,9 @@
 
 	<p>Over a couple of months of evenings I went deep on image processing algorithms and performance optimization, learning how to implement things like convolution matrices and bit shifting to create a lightweight, browser-based image manipulation library. This was also the first true open source project I launched, which garnered a lot of attention and some useful contributions back upstream.</p>
 
-	<p>Aside from the main image processing functions, another issue to be solved was the interface to pull a document's images into the <code>canvas</code> element and get them back out into the document, without requiring much configuration on the author's part.</p>
+	<p>Aside from the main image processing functions, another issue that needed to be solved was the interface to pull a document's images into the <code>canvas</code> element and get them back out into the document somehow without requiring much configuration on the author's part.</p>
 
-	<p>The technique I hit on involved having the script check for a defined list of filter classes to decide where to apply the filters. When found it pulls in the image data, regardless of whether it found an <code>img</code> element or CSS background image, and renders it to an off-screen <code>canvas</code> element, applies the filter, then captures the canvas contents to a data-uri and replace the original source with this updated image data.</p>
+	<p>The technique I hit upon involved having the script check for a defined list of filter classes that helped it decide where to apply a filter. For each defined class the script pulls in the image data, regardless of whether it found an <code>img</code> element or CSS background image, and renders it to an off-screen <code>canvas</code> element, applies the filter, then captures the canvas contents to a data-uri and replace the original source with this processed image data.</p>
 
 	<p>The more recent <a href="http://www.w3.org/TR/filter-effects-1/">W3C filter effects</a> spec has made PaintbrushJS mostly redundant today, but in 2010 this was the only way to accomplish these effects on the fly without the assistance of a heavy server-side library.</p>
 

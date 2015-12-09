@@ -67,7 +67,7 @@ date-end: 2009
 
 	<p>In 2006 while I was still freelancing, I suspected that creating a digital icon set might be a good way to have an actual product that generated a bit of recurring income.</p>
 
-	<p>Over the next few years, I built up multiple sets within the same visual icon family, almost 600 base designs available in 3 different bitmap sizes -- which was how icons were commonly delivered at the time.)</p>
+	<p>Over the next few years, I built up multiple sets within the same visual icon family, almost 600 base designs available in 3 different bitmap sizes &#8212; which was how icons were commonly delivered at the time.)</p>
 
 	<ul class="project-gallery project-gallery-4up">
 
