@@ -20,15 +20,21 @@ date-end: Present
 		<ul class="project-gallery project-gallery-3up">
 
 			<li class="project-thumb">
-				<img src="/i/projects/fhf/lead1.jpg" alt="People on a picnic blanket under the trees" />
+				<a href="/i/projects/fhf/large/lead1.jpg" class="project-image">
+					<img src="/i/projects/fhf/lead1.jpg" alt="People on a picnic blanket under the trees" />
+				</a>
 			</li>
 
 			<li class="project-thumb">
-				<img src="/i/projects/fhf/lead2.jpg" alt="Beer glass against a wooden barrel" />
+				<a href="/i/projects/fhf/large/lead2.jpg" class="project-image">
+					<img src="/i/projects/fhf/lead2.jpg" alt="Beer glass against a wooden barrel" />
+				</a>
 			</li>
 
 			<li class="project-thumb">
-				<img src="/i/projects/fhf/lead3.jpg" alt="The festival crowd with barrels in the foreground" />
+				<a href="/i/projects/fhf/large/lead3.jpg" class="project-image">
+					<img src="/i/projects/fhf/lead3.jpg" alt="The festival crowd with barrels in the foreground" />
+				</a>
 			</li>
 
 		</ul>
@@ -48,27 +54,39 @@ date-end: Present
 	<ul class="project-gallery project-gallery-6up">
 
 		<li class="project-thumb">
-			<img src="/i/projects/fhf/main7.jpg" alt="Festival crowd" />
+			<a href="/i/projects/fhf/large/main7.jpg" class="project-image">
+				<img src="/i/projects/fhf/main7.jpg" alt="Festival crowd" />
+			</a>
 		</li>
 
 		<li class="project-thumb">
-			<img src="/i/projects/fhf/main2.jpg" alt="Pouring beer from a barrel" />
+			<a href="/i/projects/fhf/large/main2.jpg" class="project-image">
+				<img src="/i/projects/fhf/main2.jpg" alt="Pouring beer from a barrel" />
+			</a>
 		</li>
 
 		<li class="project-thumb">
-			<img src="/i/projects/fhf/main3.jpg" alt="Ale Apothecary bottles on ice" />
+			<a href="/i/projects/fhf/large/main3.jpg" class="project-image">
+				<img src="/i/projects/fhf/main3.jpg" alt="Ale Apothecary bottles on ice" />
+			</a>
 		</li>
 
 		<li class="project-thumb">
-			<img src="/i/projects/fhf/main6.jpg" alt="Picnic tables in the orchard" />
+			<a href="/i/projects/fhf/large/main6.jpg" class="project-image">
+				<img src="/i/projects/fhf/main6.jpg" alt="Picnic tables in the orchard" />
+			</a>
 		</li>
 
 		<li class="project-thumb">
-			<img src="/i/projects/fhf/main4.jpg" alt="Musicians surrounded by hay bales" />
+			<a href="/i/projects/fhf/large/main4.jpg" class="project-image">
+				<img src="/i/projects/fhf/main4.jpg" alt="Musicians surrounded by hay bales" />
+			</a>
 		</li>
 
 		<li class="project-thumb">
-			<img src="/i/projects/fhf/main5.jpg" alt="Pouring beer under a tent" />
+			<a href="/i/projects/fhf/large/main5.jpg" class="project-image">
+				<img src="/i/projects/fhf/main5.jpg" alt="Pouring beer under a tent" />
+			</a>
 		</li>
 
 

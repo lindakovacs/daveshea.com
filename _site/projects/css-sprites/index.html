@@ -98,6 +98,27 @@
 </footer>
 
 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="/script/magnific.js"></script>
+	<script>
+		$(document).ready(function() {
+		  $('.project-image').magnificPopup({
+			gallery: {
+				// options for gallery
+				enabled: true
+			},
+		  	type:'image',
+
+			// Delay in milliseconds before popup is removed
+			removalDelay: 300,
+
+			// Class that is added to popup wrapper and background
+			// make it unique to apply your CSS animations just to this exact popup
+			mainClass: 'mfp-fade'
+		  });
+		});
+	</script>
+
   </body>
 
 </html>
