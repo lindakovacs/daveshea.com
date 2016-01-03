@@ -185,6 +185,26 @@ date: 2010
 </section>
 
 
+<section class="project-nav">
+	<ul>
+		<li class="project-prev">
+			<a href="/projects/elevation/" class="link">
+				Elevation
+			</a>
+		</li>
+		<li class="project-top">
+			<a href="#top" class="link">
+				Back to Top
+			</a>
+		</li>
+		<li class="project-next">
+			<a href="/projects/chalkwork/" class="link">
+				Chalkwork Icon Library
+			</a>
+		</li>
+	</ul>
+</section>
+
 
 <script type="text/javascript" src="/projects/paintbrushjs/script/common.js"></script>
 <script type="text/javascript" src="/projects/paintbrushjs/script/paintbrush.js"></script>

@@ -168,3 +168,23 @@ date-end: 2011
 
 	</div>
 </section>
+
+<section class="project-nav">
+	<ul>
+		<li class="project-prev">
+			<a href="/projects/nautical-disaster/" class="link">
+				Nautical Disaster
+			</a>
+		</li>
+		<li class="project-top">
+			<a href="#top" class="link">
+				Back to Top
+			</a>
+		</li>
+		<li class="project-next">
+			<a href="/projects/elevation/" class="link">
+				Elevation
+			</a>
+		</li>
+	</ul>
+</section>

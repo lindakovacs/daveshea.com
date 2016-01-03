@@ -131,4 +131,24 @@ date-end: 2009
 </section>
 
 
+<section class="project-nav">
+	<ul>
+		<li class="project-prev">
+			<a href="/projects/paintbrush/" class="link">
+				Paintbrush JS
+			</a>
+		</li>
+		<li class="project-top">
+			<a href="#top" class="link">
+				Back to Top
+			</a>
+		</li>
+		<li class="project-next">
+			<a href="/projects/wdn/" class="link">
+				Web Directions North
+			</a>
+		</li>
+	</ul>
+</section>
+
 <script type="text/javascript" src="/script/picturefill.min.js" async></script>

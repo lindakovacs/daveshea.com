@@ -90,3 +90,24 @@ date-end: 2010
 
 	</div>
 </section>
+
+
+<section class="project-nav">
+	<ul>
+		<li class="project-prev">
+			<a href="/projects/mezzoblue/" class="link">
+				mezzoblue
+			</a>
+		</li>
+		<li class="project-top">
+			<a href="#top" class="link">
+				Back to Top
+			</a>
+		</li>
+		<li class="project-next">
+			<a href="/projects/paintbrush/" class="link">
+				Paintbrush JS
+			</a>
+		</li>
+	</ul>
+</section>

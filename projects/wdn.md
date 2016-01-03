@@ -133,3 +133,24 @@ date-end: 2008
 
 	</div>
 </section>
+
+
+<section class="project-nav">
+	<ul>
+		<li class="project-prev">
+			<a href="/projects/chalkwork/" class="link">
+				Chalkwork Icon Library
+			</a>
+		</li>
+		<li class="project-top">
+			<a href="#top" class="link">
+				Back to Top
+			</a>
+		</li>
+		<li class="project-next">
+			<a href="/projects/zen-book/" class="link">
+				The Zen of CSS Design
+			</a>
+		</li>
+	</ul>
+</section>

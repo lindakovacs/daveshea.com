@@ -8,8 +8,10 @@ $spacing-unit:          2rem;
 $grid-unit:             176px;
 $gutter-unit:           20px;
 
-$text-colour:           #333;
 $accent-colour:         #000;
+$border-colour:         #eaeaea;
+$text-colour:           #333;
+$text-colour-muted:     #999;
 
 $grey-colour:           #beb3ae;
 $grey-colour-light:     lighten($grey-colour, 10%);

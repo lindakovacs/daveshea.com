@@ -134,3 +134,24 @@ date-end: Present
 
 	</div>
 </section>
+
+
+<section class="project-nav">
+	<ul>
+		<li class="project-prev">
+			<a href="/projects/style-class/" class="link">
+				Style &amp; Class
+			</a>
+		</li>
+		<li class="project-top">
+			<a href="#top" class="link">
+				Back to Top
+			</a>
+		</li>
+		<li class="project-next">
+			<a href="/projects/nautical-disaster/" class="link">
+				Nautical Disaster
+			</a>
+		</li>
+	</ul>
+</section>

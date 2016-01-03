@@ -230,6 +230,85 @@
 
 
 //
+// project previous/next navigation
+//
+.project-nav .link {
+    display: block;
+    padding: 1.5rem;
+    color: $text-colour-muted;
+    text-decoration: none;
+}
+.project-nav .link:hover, .project-nav .link:active {
+    color: $text-colour;
+}
+.project-nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0 0 0;
+    border-top: solid 1px $border-colour;
+    list-style: none;
+    font-size: 1rem;
+}
+.project-prev, .project-next, .project-top {
+    flex: 1 1 50%;
+    margin: 0;
+    text-align: center;
+}
+.project-prev {
+    border-right: solid 1px $border-colour;
+}
+.project-top {
+    order: 3;
+    flex: 1 0 100%;
+    border-top: solid 1px $border-colour;
+}
+
+
+@include screen-small {
+    .project-prev .link::before, .project-next .link::after {
+        content: "";
+        display: inline-block;
+        width: 19px;
+        height: 19px;
+        opacity: 0.2;
+        background-image: url(/i/ui-arrow.png);
+        background-size: 19px 19px;
+
+        // annoying alignment needs slight adjustment
+        vertical-align: text-bottom;
+        position: relative;
+        top: -1px;
+    }
+    .project-prev .link:hover::before, .project-next .link:hover::after {
+        opacity: 0.5;
+    }
+    .project-prev .link::before {
+        margin-right: 0.5rem;
+    }
+    .project-next .link::after {
+        margin-left: 0.5rem;
+        transform: rotate(180deg);
+    }
+}
+
+@include screen-medium {
+    .project-prev, .project-next, .project-top {
+        flex: 1 1 33%;
+    }
+    .project-next {
+        border-left: solid 1px $border-colour;
+    }
+    .project-top {
+        order: 0;
+        border-top: none;
+    }
+}
+
+
+
+//
 //
 //  content templates for projects
 //

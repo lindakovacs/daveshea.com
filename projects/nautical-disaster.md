@@ -152,3 +152,24 @@ date: 2013
 
 	</div>
 </section>
+
+
+<section class="project-nav">
+	<ul>
+		<li class="project-prev">
+			<a href="/projects/farmhouse-fest/" class="link">
+				Farmhouse Fest
+			</a>
+		</li>
+		<li class="project-top">
+			<a href="#top" class="link">
+				Back to Top
+			</a>
+		</li>
+		<li class="project-next">
+			<a href="/projects/mezzoblue/" class="link">
+				mezzoblue
+			</a>
+		</li>
+	</ul>
+</section>
