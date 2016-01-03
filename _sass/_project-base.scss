@@ -224,7 +224,12 @@
 
 .project-elsewhere {
     padding: 2rem 0;
-    // text-align: center;
+    text-align: center;
+}
+@include screen-medium {
+    .project-elsewhere {
+        text-align: left;
+    }
 }
 
 
@@ -246,8 +251,8 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    margin: 2rem 0 0 0;
-    border-top: solid 1px $border-colour;
+    margin: 0;
+    border-top: solid 1px $grey-colour-light;
     list-style: none;
     font-size: 1rem;
 }
@@ -257,12 +262,12 @@
     text-align: center;
 }
 .project-prev {
-    border-right: solid 1px $border-colour;
+    border-right: solid 1px $grey-colour-light;
 }
 .project-top {
     order: 3;
     flex: 1 0 100%;
-    border-top: solid 1px $border-colour;
+    border-top: solid 1px $grey-colour-light;
 }
 
 
@@ -298,7 +303,7 @@
         flex: 1 1 33%;
     }
     .project-next {
-        border-left: solid 1px $border-colour;
+        border-left: solid 1px $grey-colour-light;
     }
     .project-top {
         order: 0;
