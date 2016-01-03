@@ -46,20 +46,20 @@ date-end: 2010
 		<ul class="project-gallery project-gallery-3up">
 
 			<li class="project-thumb">
-				<a href="http://exnihilo.mezzoblue.com/wp-content/uploads/2009/10/31.png">
-					<img src="/i/projects/elevation/screen1.png" alt="" />
+				<a href="/i/projects/elevation/screen1.png" class="project-image">
+					<img src="/i/projects/elevation/screen1.png" alt="Route data as black on white plot" />
 				</a>
 			</li>
 
 			<li class="project-thumb">
-				<a href="http://exnihilo.mezzoblue.com/wp-content/uploads/2009/10/21.png">
-					<img src="/i/projects/elevation/screen2.png" alt="" />
+				<a href="/i/projects/elevation/screen2.png" class="project-image">
+					<img src="/i/projects/elevation/screen2.png" alt="Route data with elevation indicated by colour" />
 				</a>
 			</li>
 
 			<li class="project-thumb">
-				<a href="http://exnihilo.mezzoblue.com/wp-content/uploads/2009/10/41.png">
-					<img src="/i/projects/elevation/screen3.png" alt="" />
+				<a href="/i/projects/elevation/screen3.png" class="project-image">
+					<img src="/i/projects/elevation/screen3.png" alt="Route data with speed indicated by colour" />
 				</a>
 			</li>
 
