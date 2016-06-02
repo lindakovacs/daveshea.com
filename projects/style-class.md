@@ -5,7 +5,7 @@ permalink: /projects/style-class/
 makerbase: https://makerba.se/p/x2t0q4/stylenclass
 slug: style-class
 project: true
-weight: 20
+weight: 30
 date: 2013
 date-end: Present
 ---

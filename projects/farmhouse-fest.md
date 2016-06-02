@@ -5,7 +5,7 @@ permalink: /projects/farmhouse-fest/
 makerbase: https://makerba.se/p/gr005t/farmhousefest
 slug: farmhouse-fest
 project: true
-weight: 30
+weight: 40
 date: 2014
 date-end: Present
 ---
@@ -96,7 +96,7 @@ date-end: Present
 
 	<p>Despite a slightly higher-than-normal price tag for Vancouver, we managed to sell out a month prior to the event, bringing a crowd of 800 people out to the UBC Farm, and get an overwhelmingly positive response online and in our attendee survey.</p>
 
-	<p>Are we going to do it again? You bet.</p>
+	<p>Are we going to do it again? <a href="http://farmhousefest.com/2016/">You bet</a>.</p>
 
 	<p><em>Photos by <a href="http://jonnypicture.com/">Jonathan Evans</a></em></p>
 

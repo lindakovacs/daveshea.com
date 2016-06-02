@@ -112,7 +112,7 @@ em {
 .project-list {
     line-height: 1.2;
     .project-title {
-        font-weight: bold;
+        @include type-alternate;
     }
     @include screen-small {
         .project-title {
@@ -161,7 +161,8 @@ em, .project-role, .site-footer p {
 // making everything larger on bigger screens
 @include screen-medium {
     .site-description, .project-date {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
+        letter-spacing: 0.05rem;
     }
     .page-project {
         .project-title {

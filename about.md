@@ -5,9 +5,7 @@ permalink: /about/
 weight: 200
 ---
 	
-Hi, you've found my site. This is a collection of projects, pursuits, social media channels and whatever else I feel like putting on here.
-
-I've been working on the web for the better part of two decades and never really had a proper home that linked all my various pursuits together until now. (Sure there was the designy portfolio site from the dot com era that got converted over to a blog and saw a decent amount of <a href="/projects/mezzoblue/">success</a>, but beyond that...)
+Hi, I'm Dave Shea and you've found my site. This is a collection of projects, pursuits, social media channels and whatever else I feel like putting on here.
 
 Stuff about me in no particular order:
 
@@ -16,10 +14,10 @@ Stuff about me in no particular order:
 * I seem to <a href="/projects/wdn/">have</a> a <a href="/projects/style-class/">knack</a> for running <a href="/projects/farmhouse-fest/">events</a>.
 * I've spoken at over 40 conferences in a dozen or so countries. Lanyrd has an incomplete listing of <a href="http://lanyrd.com/profile/mezzoblue/">past appearances</a>, fleshing that out is on the to-do list.
 * There are at least two blogs around these parts: my <a href="http://beer.daveshea.com/">Beer Log</a> and a <a href="http://exnihilo.mezzoblue.com/">Processing sketch journal</a>.
-* I hold a few beer certifications! I'm a <a href="https://www.cicerone.org/us-en/users/dave-shea-0">Certified Cicerone®</a>, I'm also a BJCP-certified beer judge. I actively judge 2-3 competitions per year, mostly locally.
-* My main ride is a Look 585 and I try to rack up a <a href="https://www.strava.com/athletes/941895">few thousand kilometers</a> each year. I rode the <a href="http://granfondowhistler.com/">Whistler Gran Fondo</a> three times.
+* I hold a few beer certifications. I'm a <a href="https://www.cicerone.org/us-en/users/dave-shea-0">Certified Cicerone®</a>, I'm also a BJCP&#8211;certified beer judge. I actively judge at least a few competitions per year, mostly locally.
+* My main ride is a <a href="https://www.google.com/search?q=look+585">Look 585</a> and I try to rack up a <a href="https://www.strava.com/athletes/941895">few thousand kilometers</a> each year. I rode the <a href="http://granfondowhistler.com/">Whistler Gran Fondo</a> three times.
 * I've fallen out of the habit of photo sharing, but I still have an extremely inactive <a href="https://flickr.com/photos/mezzoblue">Flickr</a> account and an only slightly less inactive <a href="http://instagram.com/mezzoblue">Instagram</a> feed.
-* I prefer cooking from scratch when possible. Current favourite recipes include the <a href="http://www.seriouseats.com/recipes/2014/09/the-best-slow-cooked-italian-american-tomato-sauce-red-sauce-recipe.html">Serious Eats tomato sauce</a>, the pain de campagne from <a href="http://www.amazon.ca/Flour-Water-Salt-Yeast-Fundamentals/dp/160774273X">Flour Water Salt Yeast</a>, and Food Renegade's <a href="http://www.foodrenegade.com/lactofermented-carrot-sticks/">lacto-fermented carrots</a>. I'm working hard on perfecting my home Neopolitan-style pizza. That's been slow going but delicious work.
+* I prefer cooking from scratch when possible. Current favourite recipes include the <a href="http://www.seriouseats.com/recipes/2014/09/the-best-slow-cooked-italian-american-tomato-sauce-red-sauce-recipe.html">Serious Eats tomato sauce</a>, the pain de campagne from <a href="http://www.amazon.ca/Flour-Water-Salt-Yeast-Fundamentals/dp/160774273X">Flour Water Salt Yeast</a>, and Food Renegade's <a href="http://www.foodrenegade.com/lactofermented-carrot-sticks/">lacto-fermented carrots</a>. I'm working hard on perfecting my home Neopolitan-style pizza. This has been slow going but delicious work.
 
 <!-- * something about <a href="http://brightcreative.com/portfolio/publications/">these publications</a> that I'll get around to writing eventually maybe
  -->

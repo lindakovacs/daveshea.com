@@ -5,7 +5,7 @@ permalink: /projects/zen/
 makerbase: https://makerba.se/p/va848d/csszengarden
 slug: zen
 project: true
-weight: 10
+weight: 20
 date: 2003
 date-end: Present
 ---
@@ -158,8 +158,8 @@ date-end: Present
 <section class="project-nav">
 	<ul>
 		<li class="project-prev">
-			<a href="/" class="link">
-				Home
+			<a href="/projects/palatedeck/" class="link">
+				The Palate Deck
 			</a>
 		</li>
 		<li class="project-top">
