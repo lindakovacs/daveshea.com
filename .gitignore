@@ -5,6 +5,7 @@
 ._*
 .Spotlight-V100
 .Trashes
+deploy_prod.sh
 
 # compiled files #
 ##################
