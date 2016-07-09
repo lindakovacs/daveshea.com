@@ -92,9 +92,9 @@
 //
 //  Project settings: Palate Deck
 //
-$pdTextColour: #E4BAA3;
+$pdTextColour: #75392e;
 $pdAccentColour: #DB6953;
-$pdBaseColour: #75392e;
+$pdBaseColour: #E4BAA3;
 @include styleProject("palatedeck", $pdBaseColour, $pdTextColour, $pdAccentColour);
 @include styleProjectImage("palatedeck") {
     background-image: 
