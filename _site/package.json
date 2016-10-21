@@ -1,11 +1,11 @@
 {
-  "name": "davesjea",
+  "name": "daveshea",
   "version": "0.1.0",
   "description": "daveshea.com - a selection of projects",
   "author": "@mezzoblue",
   "repository": {
     "type": "git",
-    "url": "https://github.com/styleandclass/styleandclass.ca"
+    "url": "https://github.com/mezzoblue/daveshea.com"
   },
   "devDependencies": {
     "grunt": "~0.4.2",

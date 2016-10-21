@@ -12,7 +12,7 @@ date: 2013
 <section id="summary" class="project-section">
 	<div class="wrap">
 		<div class="project-summary">
-			<p>A competition-winning best of show brew scaled up to 28-hectoliter commercial system and released commercially in bottles and kegs.</p>
+			<p>A competition-winning best of show brew scaled up to 28-hectoliter (24 barrel) commercial system and released commercially in bottles and kegs.</p>
 			<p class="project-role">Contribution: Recipe, Brewer, Bottle Design</p>
 		</div>
 
