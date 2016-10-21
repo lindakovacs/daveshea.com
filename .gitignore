@@ -6,6 +6,7 @@
 .Spotlight-V100
 .Trashes
 deploy_prod.sh
+node_modules
 
 # compiled files #
 ##################

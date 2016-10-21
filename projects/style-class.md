@@ -7,7 +7,7 @@ slug: style-class
 project: true
 weight: 30
 date: 2013
-date-end: Present
+date-end: 2016
 ---
 
 <section id="summary" class="project-section">

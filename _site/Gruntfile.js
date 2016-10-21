@@ -35,12 +35,25 @@ module.exports = function(grunt) {
         }
       }
     },
+    smarttext: {
+      options: {
+        // the defaults are great
+      },
+      target : {
+        files: [{
+          'expand': true,
+          'src': ['_site/**/*.html'],
+          'dest': '.'
+        }],
+      },
+    },    
   });
 
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-autoprefixer');
   grunt.loadNpmTasks('grunt-jekyll');
+  grunt.loadNpmTasks('grunt-smarttext');
 
-  grunt.registerTask('default', ['cssmin', 'autoprefixer']);
+  grunt.registerTask('default', ['cssmin', 'autoprefixer', 'smarttext']);
   grunt.registerTask('deploy', ['jekyll', 'default']);
 };
