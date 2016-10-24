@@ -186,6 +186,8 @@ The basic image is where I need it now, so the last thing to do is add a red gra
 
 The big caveat for this technique is that support for <code>background-blend-mode</code> in IE/Edge is non-existent right now. As I said at the beginning, it can degrade well, but you need to plan ahead. 
 
+<strong>Note:</strong> It looks like Safari is treating the examples the same way. New blog, I may have messed up the prefixing. Investigating...
+
 The multiple layers I'm using here are problematic because without blend modes, the rendered result is a muddied mess. It may not always be that bad, but clearly I need to back up a bit with this example.
 
 <ul class="project-gallery project-gallery-2up-break">
