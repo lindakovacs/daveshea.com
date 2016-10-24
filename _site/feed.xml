@@ -6,35 +6,417 @@
 </description>
     <link>http://daveshea.com/</link>
     <atom:link href="http://daveshea.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 21 Oct 2016 16:17:17 -0700</pubDate>
-    <lastBuildDate>Fri, 21 Oct 2016 16:17:17 -0700</lastBuildDate>
+    <pubDate>Mon, 24 Oct 2016 00:03:43 -0700</pubDate>
+    <lastBuildDate>Mon, 24 Oct 2016 00:03:43 -0700</lastBuildDate>
     <generator>Jekyll v3.1.2</generator>
     
       <item>
-        <title>Welcome to Jekyll!</title>
-        <description>&lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
+        <title>Photo Toning with Gradients &amp;amp; Blend Modes</title>
+        <description>&lt;p&gt;Your browser now has ample ability to compose image effects on the fly, saving you a trip into an image editor. You can simulate toning effects and deliver the same image in many different ways by combining layered gradients over top of images and blending with the &lt;code&gt;background-blend-mode&lt;/code&gt; property.&lt;/p&gt;
 
-&lt;p&gt;To add new posts, simply add a file in the &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code class=&quot;highlighter-rouge&quot;&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
+&lt;p&gt;A need arose while building the &lt;a href=&quot;http://palatedeck.com/&quot;&gt;Palate Deck&lt;/a&gt; website. After I’d placed the banner photos on various pages, I realized I’d need to go back into Photoshop to tint them and town down the contrast so I could overlay other text and images.&lt;/p&gt;
 
-&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
+&lt;p&gt;Or… did I?&lt;/p&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;Tom&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints &#39;Hi, Tom&#39; to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;p&gt;After consulting &lt;a href=&quot;http://caniuse.com/#feat=css-backgroundblendmode&quot;&gt;caniuse&lt;/a&gt; for &lt;code&gt;background-blend-mode&lt;/code&gt; support, I realized that a) it’s almost universally supported, and b) if used thoughtfully, it’s an effect that will degrade fairly well when it’s not.&lt;/p&gt;
 
-&lt;p&gt;Check out the &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://github.com/jekyll/jekyll-help&quot;&gt;Jekyll’s dedicated Help repository&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;And so I stumbled across a new image compositing trick.&lt;/p&gt;
 
+&lt;ul class=&quot;project-gallery project-gallery-2up&quot;&gt;
+	&lt;li class=&quot;project-thumb&quot;&gt;
+		&lt;figure&gt;
+			&lt;div class=&quot;image&quot;&gt;&lt;/div&gt;
+			&lt;figcaption&gt;The raw photo&lt;/figcaption&gt;
+		&lt;/figure&gt;
+	&lt;/li&gt;
+	&lt;li class=&quot;project-thumb&quot;&gt;
+		&lt;figure&gt;
+			&lt;div class=&quot;image image-final&quot;&gt;&lt;/div&gt;
+			&lt;figcaption&gt;The end result, all composed in-browser&lt;/figcaption&gt;
+		&lt;/figure&gt;
+	&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;Basic Setup&lt;/h2&gt;
+
+&lt;p&gt;This effect is pretty familiar if you’ve ever digitally tinted a photo: take a photo, then add an adjustment layer over top to tint it, or adjust contrast, or add a gradient.&lt;/p&gt;
+
+&lt;p&gt;Unlike an image editor, in this case the adjustment layers are browser-generated gradients. And we’re doing this all with background image properties, and the multiple images they support.&lt;/p&gt;
+
+&lt;p&gt;But wait, isn’t this what &lt;code&gt;filter&lt;/code&gt; is supposed to do? I would have thought so too. However, the latest working draft doesn’t have a mechanism for precise image toning. We’re able to control contrast, and rotate the hue through the spectrum (an ability that’s rarely useful in the real world), but it’s unable to apply specific colour toning and subtle differences to various regions of the image.&lt;/p&gt;
+
+&lt;p&gt;So this is where we need to turn to layering and blending. To make this work, start by setting up your image as &lt;code&gt;background-image&lt;/code&gt; instead of an &lt;code&gt;img&lt;/code&gt; element. You’ll need to set specific dimensions for your container (and media queries to resize where appropriate) and then use background properties to control it all.&lt;/p&gt;
+
+&lt;ul class=&quot;project-gallery project-gallery-2up-break&quot;&gt;
+	&lt;li class=&quot;project-thumb&quot;&gt;
+		&lt;div class=&quot;image&quot;&gt;&lt;/div&gt;
+	&lt;/li&gt;
+	&lt;li class=&quot;project-thumb&quot;&gt;
+		&lt;code&gt;&lt;textarea onclick=&quot;this.focus();this.select()&quot; readonly=&quot;readonly&quot;&gt;
+.image {
+  max-width: 100%;
+  height: 200px;
+  background-image: url(blog.jpg);
+  background-size: cover;
+  background-position: center;
+}&lt;/textarea&gt;&lt;/code&gt;
+	&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;(The above properties are omitted from the following code examples for clarity’s sake, but make sure to re-add them for the proper effect.)&lt;/p&gt;
+
+&lt;p&gt;To give you an idea of the adjustment control you have, I’ll walk through the steps to create the comparison blend at the beginning of this article.&lt;/p&gt;
+
+&lt;h2&gt;Tinting&lt;/h2&gt;
+
+&lt;p&gt;To start, I wanted to tint the image. This is easily accomplished by laying a solid-colour “gradient” over top with the same colour at both start and end points, then using the &lt;code&gt;color&lt;/code&gt; blend mode to mix. By adjusting the alpha value of the end points you can control whether the image is fully tinted with the overlaying colour, or whether it allows natural colour to poke through.&lt;/p&gt;
+
+&lt;ul class=&quot;project-gallery project-gallery-2up-break&quot;&gt;
+	&lt;li class=&quot;project-thumb&quot;&gt;
+		&lt;div class=&quot;image image-tint&quot;&gt;&lt;/div&gt;
+	&lt;/li&gt;
+	&lt;li class=&quot;project-thumb&quot;&gt;
+		&lt;code&gt;&lt;textarea onclick=&quot;this.focus();this.select()&quot; readonly=&quot;readonly&quot;&gt;
+.image {
+  /* setup properties omitted */
+  background-image: 
+    linear-gradient(
+      to bottom,
+      rgba(#33767e, 0.9) 0%,
+      rgba(#33767e, 0.9) 100%
+    ),
+    url(beer.jpg);
+
+  background-blend-mode: 
+    color,
+    normal
+  ;
+}&lt;/textarea&gt;&lt;/code&gt;
+	&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;Contrast&lt;/h2&gt;
+
+&lt;p&gt;The next step was dropping back contrast to let me add text over top. I’m not going to show the text here, but let’s talk about the contrast.&lt;/p&gt;
+
+&lt;p&gt;Unlike tinting, we &lt;em&gt;can&lt;/em&gt; control brightness and contrast with &lt;code&gt;filter&lt;/code&gt; here. But it’s not ideal since it only applies to the final rendered stack, which means it takes all previous effects with it. In this case I’d like the contrast adjustment to occur on the image before the tint and the red gradient is overlaid, so it won’t work for me.&lt;/p&gt;
+
+&lt;p&gt;So we’ll have to fake it with more gradients. I’ve chosen to use two; one a white layer set to 50% opacity and the lighten blend mode, the second a 50% opacity black layer set to darken. Combining those two together lightens the shadows and darkens the highlights. It results in a much greyer image, but that doesn’t matter since I’m applying the tint over top.&lt;/p&gt;
+
+&lt;ul class=&quot;project-gallery project-gallery-2up-break&quot;&gt;
+	&lt;li class=&quot;project-thumb&quot;&gt;
+		&lt;div class=&quot;image image-contrast&quot;&gt;&lt;/div&gt;
+	&lt;/li&gt;
+	&lt;li class=&quot;project-thumb&quot;&gt;
+		&lt;code&gt;&lt;textarea onclick=&quot;this.focus();this.select()&quot; readonly=&quot;readonly&quot;&gt;
+.image {
+  /* setup properties omitted */
+  background-image: 
+    linear-gradient(
+      to bottom,
+      rgba(#33767e, 0.9) 0%,
+      rgba(#33767e, 0.9) 100%
+    ),
+    linear-gradient(
+      to bottom,
+      rgba(#fff, 0.5) 0%,
+      rgba(#fff, 0.5) 100%
+    ),
+    linear-gradient(
+      to bottom,
+      rgba(#000, 0.5) 0%,
+      rgba(#000, 0.5) 100%
+    ),
+    url(beer.jpg);
+
+  background-blend-mode: 
+	color,
+	lighten,
+	darken,
+	normal;
+  ;
+}&lt;/textarea&gt;&lt;/code&gt;
+	&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;Gradients&lt;/h2&gt;
+
+&lt;p&gt;The basic image is where I need it now, so the last thing to do is add a red gradient at top of the stack to get the final tone I was shooting for. This last layer has some opaqueness and is blended normally to drop the finished contrast further.&lt;/p&gt;
+
+&lt;ul class=&quot;project-gallery project-gallery-2up-break&quot;&gt;
+	&lt;li class=&quot;project-thumb&quot;&gt;
+		&lt;div class=&quot;image image-final&quot;&gt;&lt;/div&gt;
+	&lt;/li&gt;
+	&lt;li class=&quot;project-thumb&quot;&gt;
+		&lt;code&gt;&lt;textarea onclick=&quot;this.focus();this.select()&quot; readonly=&quot;readonly&quot;&gt;
+.image {
+  /* setup properties omitted */
+  background-image: 
+    linear-gradient(
+      to bottom,
+      rgba(#d43f2d, 0.9) 0%,
+      rgba(#d43f2d, 0.1) 100%
+    ),
+    linear-gradient(
+      to bottom,
+      rgba(#33767e, 0.9) 0%,
+      rgba(#33767e, 0.9) 100%
+    ),
+    linear-gradient(
+      to bottom,
+      rgba(#fff, 0.5) 0%,
+      rgba(#fff, 0.5) 100%
+    ),
+    linear-gradient(
+      to bottom,
+      rgba(#000, 0.5) 0%,
+      rgba(#000, 0.5) 100%
+    ),
+    url(beer.jpg);
+
+  background-blend-mode: 
+	normal
+	color,
+	lighten,
+	darken,
+	normal;
+  ;
+}&lt;/textarea&gt;&lt;/code&gt;
+	&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;Browser Support&lt;/h2&gt;
+
+&lt;p&gt;The big caveat for this technique is that support for &lt;code&gt;background-blend-mode&lt;/code&gt; in IE/Edge is non-existent right now. As I said at the beginning, it can degrade well, but you need to plan ahead.&lt;/p&gt;
+
+&lt;p&gt;The multiple layers I’m using here are problematic because without blend modes, the rendered result is a muddied mess. It may not always be that bad, but clearly I need to back up a bit with this example.&lt;/p&gt;
+
+&lt;ul class=&quot;project-gallery project-gallery-2up-break&quot;&gt;
+	&lt;li class=&quot;project-thumb&quot;&gt;
+		&lt;figure&gt;
+			&lt;div class=&quot;image image-final-noblend&quot;&gt;&lt;/div&gt;
+			&lt;figcaption&gt;When blend modes aren&#39;t supported&lt;/figcaption&gt;
+		&lt;/figure&gt;
+	&lt;/li&gt;
+	&lt;li class=&quot;project-thumb&quot;&gt;
+		&lt;figure&gt;
+			&lt;div class=&quot;image image-precomposed&quot;&gt;&lt;/div&gt;
+			&lt;figcaption&gt;Much better, with a pre-toned photo&lt;/figcaption&gt;
+		&lt;/figure&gt;
+	&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The compromise I found was pre-toning and contrast-adjusting the photo in my image editor, and then applying the finishing gradients in the browser. I lose out on some of the benefits listed below by doing it this way, but since I know it’s only a matter of time before Edge is on board, I’m looking forward to adding the full version to the arsenal in the not so distant future.&lt;/p&gt;
+
+&lt;h2&gt;Use Cases&lt;/h2&gt;
+
+&lt;p&gt;So how useful is this, really? Why build up your image toning in-browser instead of simply pre-composing in an image editor?&lt;/p&gt;
+
+&lt;ul class=&quot;project-gallery project-gallery-4up&quot;&gt;
+	&lt;li class=&quot;project-thumb&quot;&gt;
+		&lt;div class=&quot;image&quot;&gt;&lt;/div&gt;
+	&lt;/li&gt;
+	&lt;li class=&quot;project-thumb&quot;&gt;
+		&lt;div class=&quot;image image-variation-1&quot;&gt;&lt;/div&gt;
+	&lt;/li&gt;
+	&lt;li class=&quot;project-thumb&quot;&gt;
+		&lt;div class=&quot;image image-variation-2&quot;&gt;&lt;/div&gt;
+	&lt;/li&gt;
+	&lt;li class=&quot;project-thumb&quot;&gt;
+		&lt;div class=&quot;image image-variation-3&quot;&gt;&lt;/div&gt;
+	&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The answer is flexibility. You may not always be in control of the original image. It might be user-generated or coming in from a CDN. Or you may want to re-purpose it in different sections of your site. Being able to manipulate any source image in the browser is just one more trick for controlling the uncontrollable.&lt;/p&gt;
+
+&lt;p class=&quot;comments&quot;&gt;
+	Have comments on this? &lt;a href=&quot;http://twitter.com/home?status=%40mezzoblue%20my%20thoughts%20on%20your%20photo%20toning%20post%20...&quot;&gt;Tweet at me&lt;/a&gt;.
+&lt;/p&gt;
 </description>
-        <pubDate>Mon, 10 Aug 2015 14:20:04 -0700</pubDate>
-        <link>http://daveshea.com/jekyll/update/2015/08/10/welcome-to-jekyll.html</link>
-        <guid isPermaLink="true">http://daveshea.com/jekyll/update/2015/08/10/welcome-to-jekyll.html</guid>
+        <pubDate>Fri, 21 Oct 2016 00:00:00 -0700</pubDate>
+        <link>http://daveshea.com/2016/10/21/photographs.html</link>
+        <guid isPermaLink="true">http://daveshea.com/2016/10/21/photographs.html</guid>
         
         
-        <category>jekyll</category>
+      </item>
+    
+      <item>
+        <title>Everything I Know About Bread</title>
+        <description>&lt;p&gt;Great bread only needs four ingredients: flour, water, salt and yeast.&lt;/p&gt;
+
+&lt;p&gt;But there are two more: time and temperature. You need to have some control over these too. Time is the more important of the two to get right, but you don’t want to be too far off on temperature.&lt;/p&gt;
+
+&lt;p&gt;Great bread also requires humidity while baking. You can do things like add some water to a drip tray in your oven to create this, but for a standard round boule like the kind I bake frequently, the easiest way to do it is by baking your bread in a cast iron &lt;a href=&quot;https://en.wikipedia.org/wiki/Dutch_oven&quot;&gt;dutch oven&lt;/a&gt; with the lid on. No extra water required, the steam escaping creates all the humidity your bread needs to end up with a nice chewy crust. (Just make sure the lid doesn’t have a plastic handle.)&lt;/p&gt;
+
+&lt;p&gt;If you can do all that, here’s how to make something like this.&lt;/p&gt;
+
+&lt;div class=&quot;project-gallery project-gallery-1up&quot;&gt;
+	&lt;div class=&quot;project-thumb&quot;&gt;
+		&lt;img src=&quot;/i/blog/2016/bread-1.jpg&quot; alt=&quot;Freshly-baked&quot; /&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;All recipes below adapted from &lt;a href=&quot;https://www.amazon.com/Flour-Water-Salt-Yeast-Fundamentals/dp/160774273X/mezzoblue-20&quot;&gt;Flour Water Salt Yeast&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2&gt;Ingredients&lt;/h2&gt;
+
+&lt;p&gt;I don’t have a lot of advice here other than making sure your yeast is fresh. While my gut says I ought to recommend organic flour, the local brands I’ve tried don’t rise all that well in my experience, so I get better results with the mass-produced stuff.&lt;/p&gt;
+
+&lt;h2&gt;Basic Yeast-only Bread Recipe&lt;/h2&gt;
+
+&lt;p&gt;Here’s a good training wheels loaf.&lt;/p&gt;
+
+&lt;p&gt;Start by planning ahead. Realize that a good loaf takes the better part of a day to fully come together. You can mix the dough in the morning and walk away for 5-6 hours before the next step, but then you’ll want to be around for the next few hours to see it through.&lt;/p&gt;
+
+&lt;p&gt;You can do it as a simple all white flour recipe:&lt;/p&gt;
+
+&lt;ul&gt;
+	&lt;li&gt;500g white flour&lt;/li&gt;
+	&lt;li&gt;360g warm water (33°C/91°F give or take… warm but not hot tap water will do)&lt;/li&gt;
+	&lt;li&gt;10g salt&lt;/li&gt;
+	&lt;li&gt;2g instant baker’s yeast&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Or as a 40% whole wheat recipe:&lt;/p&gt;
+
+&lt;ul&gt;
+	&lt;li&gt;300g white flour&lt;/li&gt;
+	&lt;li&gt;200g whole wheat flour&lt;/li&gt;
+	&lt;li&gt;400g water&lt;/li&gt;
+	&lt;li&gt;10.5g salt&lt;/li&gt;
+	&lt;li&gt;1.5g instant baker’s yeast (or just use 2g if your scale isn’t fine enough)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;When measuring, weight is better than volume because it’s precise. Get yourself a kitchen scale if you don’t have one already. And even if you think in ounces, just use grams on your scale, because something like 1.5g is a ridiculous number in ounces.&lt;/p&gt;
+
+&lt;h3&gt;Rising the Dough&lt;/h3&gt;
+
+&lt;p&gt;Instead of mixing everything together at once for the dough, start by combining the flour and water and let it sit for 20 minutes to soften up. Use your hands, or use a Kitchenaid if you have one. Don’t bother kneading, just make sure it’s combined. Cover and let it sit for 20 minutes.&lt;/p&gt;
+
+&lt;p&gt;Next, add the yeast and salt and blend them in thoroughly. You don’t really need to knead here either. I work the bread for a couple of minutes with my hands by stretching it almost to breaking, folding it over on itself, then twisting it with both hands a bit. Repeat for a few minutes, and it should be good to rise.&lt;/p&gt;
+
+&lt;p&gt;Cover and let it sit in a warm place (24°C/75°F, give or take) for 5 hours. After the first hour or two, get your hands wet and fold it over itself a couple of times. (I don’t actually know why this part is necessary, something about extra oxygen… sometimes I forget to do it and my bread turns out fine.) By the end of the 5 hours it should be about 2-3 times the volume. In the winter you might want to go a bit longer if your room temperature is lower.&lt;/p&gt;
+
+&lt;h3&gt;Proofing&lt;/h3&gt;
+
+&lt;p&gt;Now you want to flour a flat surface and a fresh bowl and gently work the bread out of its container. Dust your hand with flour and use it as a blade to separate the dough from the edges, and slowly move it out and on to the floured surface. Gently grab an edge of the dough, stretch it up and fold it over itself. Do this a few times around the edge, try not to squish or flatten the dough as you work. Lightly dust sticky spots with more flour, and then gently roll it along the unfloured part of the surface to form a ball. Put the dough into the floured bowl, and cover.&lt;/p&gt;
+
+&lt;p&gt;The folding part is tricky to describe, so you may find &lt;a href=&quot;https://www.youtube.com/watch?v=cIIjV6s-0cA&quot;&gt;this video&lt;/a&gt; more helpful.&lt;/p&gt;
+
+&lt;div class=&quot;video&quot;&gt;
+	&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/cIIjV6s-0cA&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;The next step is proofing the dough, and you have a choice here. You can let it sit to proof for an hour, or you can put it in the fridge and proof for 12-14 hours and bake the next day. An hour allows for a quicker turnaround, but overnight proofing produces tastier results.&lt;/p&gt;
+
+&lt;p&gt;In either case, you want to let it proof until you can poke it with your finger, and the hole doesn’t spring back fully. It takes a few times to get the hang of what you’re looking for, so if you just follow the timing above you should be good. If you choose to refrigerate overnight, leave the dough cold until you’re ready to bake and transfer it directly to the dutch oven.&lt;/p&gt;
+
+&lt;h3&gt;Baking&lt;/h3&gt;
+
+&lt;p&gt;You’ll want oven mitts, things are going to get hot. Pre-heat the oven to 245°C/475°F with the dutch oven inside for about 45 minutes prior to baking. Place the dutch oven and its lid side by side in your oven so that the interior heats fully. If you don’t pre-heat long enough, your bread will stick and rip when you try to remove it, which is no fun.&lt;/p&gt;
+
+&lt;p&gt;When your loaf is proofed and ready to bake, use the same hand-blade technique to carefully separate it from the proofing bowl and drop it right into the middle of the dutch oven. Put the lid on, and bake for 30 minutes covered.&lt;/p&gt;
+
+&lt;p&gt;Remove the lid, and then bake for 5-20 minutes longer until the crust is a nice darker brown, with the edges just starting to blacken. Everyone’s oven is different here, so watch closely the first few times and get a feel for how long yours takes.&lt;/p&gt;
+
+&lt;p&gt;Flip the dutch oven over to transfer the bread to a cooling rack, and let it cool thoroughly. See Storage below for more tips.&lt;/p&gt;
+
+&lt;p&gt;Enjoy!&lt;/p&gt;
+
+&lt;h2&gt;Sourdough Bread Recipe&lt;/h2&gt;
+
+&lt;p&gt;The process for sourdough is mostly the same, with the addition of living organisms in the starter that you need to keep happy, and a longer time frame to produce a loaf.&lt;/p&gt;
+
+&lt;p&gt;I find sourdough bread a lot more complex and interesting, and make it almost exclusively. If you get the timing just right, instead of being overly sour it take on more of a creamy flavour.&lt;/p&gt;
+
+&lt;p&gt;I store my starter in the fridge when I’m not baking so I don’t have to feed it every day, which requires revival of at least two feedings before baking. This causes me to choose a time that I’ll bake and plan backwards accordingly. Say I’m baking on Sunday morning – I need to start reviving the starter on Thursday night by feeding it, letting it rise for 24 hours, then feeding it again Friday night. On Saturday morning I mix the dough, and by Saturday evening I’ve started proofing for the next morning’s bake. If you’ve used the starter recently, you can skip the first feeding.&lt;/p&gt;
+
+&lt;p&gt;Once you have a happy, thriving starter, you’ll be incorporating a bunch of it directly into the dough and then following the process outlined in the Basic Yeast-only Bread Recipe above. Here’s a basic sourdough recipe:&lt;/p&gt;
+
+&lt;ul&gt;
+	&lt;li&gt;350g white flour&lt;/li&gt;
+	&lt;li&gt;50g whole wheat flour&lt;/li&gt;
+	&lt;li&gt;290g water&lt;/li&gt;
+	&lt;li&gt;180g sourdough starter&lt;/li&gt;
+	&lt;li&gt;10.5g salt&lt;/li&gt;
+	&lt;li&gt;1g baker’s yeast&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Aside from the recipe differences and the starter feeding, follow the exact same process outlined above. For sourdough I like to make sure I’m proofing overnight in the fridge to really allow the flavour to develop.&lt;/p&gt;
+
+&lt;h3&gt;Feeding the Starter&lt;/h3&gt;
+
+&lt;p&gt;Your starter is a combination of dozens, if not hundreds of species of bacteria and yeasts. Think of it as a plant: it needs occasional feeding to keep it healthy.&lt;/p&gt;
+
+&lt;p&gt;To feed, mix together 100g water, 100g white flour, 25g whole wheat, and 25g starter. (It’s easiest to mix if you combine the starter and water together first into a soupy paste then add the flour.) Store it in a warm place to let it rise. The rest of the starter left over from the last feeding is basically spent fuel, there’s not much you can do with it if you’re not baking, so I compost it. It’s wasteful for sure, so I try to optimize my feeding schedule to keep it minimal.&lt;/p&gt;
+
+&lt;p&gt;If I’m not baking regularly, I feed once a week. I pull the starter out of the fridge to warm it up for a half hour or so, I feed it, let it rise for 12 hours, then put it back in the fridge. Sometimes I forget and it goes two weeks between feedings. While that’s a bit risky, aside from greying edges and a funkier smell it’s almost always fine. I killed a starter this way once when I let it go too long and it developed black mold, so there is a risk in not feeding enough.&lt;/p&gt;
+
+&lt;h3&gt;Getting a Starter&lt;/h3&gt;
+
+&lt;p&gt;The easiest way to do this is to just ask for some from a friend who already has one. They’re continuously discarding it when they feed it, so they’ll have plenty of extra to go around.&lt;/p&gt;
+
+&lt;p&gt;But maybe you don’t have access to an existing starter. No problem, they’re actually &lt;a href=&quot;http://breadtopia.com/make-your-own-sourdough-starter/&quot;&gt;a lot easier to make&lt;/a&gt; than you’d think. I’ve captured two wild starters, one took a week and the second only took &lt;a href=&quot;https://twitter.com/mezzoblue/status/466568094195142657&quot;&gt;a couple of days&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2&gt;Extras&lt;/h2&gt;
+
+&lt;h3&gt;Recipe Variations&lt;/h3&gt;
+
+&lt;p&gt;The recipes above are a starting point. You can play with flour proportions, you can introduce other kinds of flour, you can add other stuff to your bread. Some variations that have worked well for me:&lt;/p&gt;
+
+&lt;ul&gt;
+	&lt;li&gt;200g white flour, 200g whole wheat flour&lt;/li&gt;
+	&lt;li&gt;300g white flour, 100g rye flour&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;https://twitter.com/mezzoblue/status/542000738876915712&quot;&gt;Potato flour with stout instead of water&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;Seed blends&lt;/li&gt;
+	&lt;li&gt;Spent barley (from beer brewing)&lt;/li&gt;
+	&lt;li&gt;Half a cup of parmesan and chopped rosemary&lt;/li&gt;
+	&lt;li&gt;Half a pound of bacon&lt;/li&gt;
+
+
+When adjusting flour proportions you’ll probably want to add more or less water, depending on the flour. Whole wheat can use a little more, rye can use a little less. I&#39;d suggest doing a loaf and judging whether it came out too dense (add more water) or too soggy (add less) and trying again after an adjustment.
+
+&lt;h3&gt;Fancy Bread&lt;/h3&gt;
+
+You have a choice. One, you can simply make bread. Or two, you can make fancy bread. For your first few bakes though, keep it simple and skip this part.
+
+&lt;div class=&quot;project-gallery project-gallery-1up&quot;&gt;
+	&lt;div class=&quot;project-thumb&quot;&gt;
+		&lt;img src=&quot;/i/blog/2016/bread-2.jpg&quot; alt=&quot;Freshly-baked&quot; /&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+
+
+After you have the basics down, there are a couple of techniques you can use to really dress up your loaf. A light flour dusting on top just before going into the oven looks great once it comes out. If you have a pastry brush, run it over the flour to spread it evenly for an even more refined look. 
+
+And while bread scoring is a bit of a fiddly art, if you have a really sharp knife nearby don’t be afraid to cut a quick x or criss-cross pattern across the top. A 1/4” deep is enough. Once you get the hang of it, your bread will look like it came from the oven of a professional bakery.
+
+
+&lt;h3&gt;Storage&lt;/h3&gt;
+
+After you pull the bread out of the oven, you’ll need to let it rest for 20 minutes or so to cool down to a reasonable temperature before slicing into it. And for the first few tries, you’ll definitely want to for that instant gratification of a job well done.
+
+But bread fresh out of the oven is brittle — it has a crunchy, hard crust that flakes and shatters when you cut into it. Since I prefer a chewier crust that doesn’t cause massive cleanup, I let my bread cool completely (8 hours should do it) and then store it in a big ziplock bag on the counter for up to a week to let the humidity soften it up. I don’t store bread in the fridge — it lasts a bit longer in the fridge, but takes on a soggy texture.
+
+&lt;h3&gt;Books&lt;/h3&gt;
+
+If you want to dig deeper, I highly recommend the book I learned most of this from, &lt;a href=&quot;http://www.amazon.com/Flour-Water-Salt-Yeast-Fundamentals/dp/160774273X/mezzoblue-20&quot;&gt;Flour Water Salt Yeast&lt;/a&gt;. It can be a little precious at times and I’ve definitely adapted some of the techniques, but it’s great for foundational theory that you can branch off from.
+
+And I haven’t read it, lots of people swear by &lt;a href=&quot;http://www.amazon.ca/Tartine-Bread-Chad-Robertson/dp/0811870413/mezzoblue-20&quot;&gt;Tartine Bread&lt;/a&gt;.
+
+
+
+
+
+&lt;p class=&quot;comments&quot;&gt;
+	Have comments on this? &lt;a href=&quot;http://twitter.com/home?status=%40mezzoblue%20my%20thoughts%20on%20your%20bread%20post%20...&quot;&gt;Tweet at me&lt;/a&gt;.
+&lt;/p&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Sat, 05 Mar 2016 00:00:00 -0800</pubDate>
+        <link>http://daveshea.com/2016/03/05/bread.html</link>
+        <guid isPermaLink="true">http://daveshea.com/2016/03/05/bread.html</guid>
         
-        <category>update</category>
         
       </item>
     

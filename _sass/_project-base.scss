@@ -366,6 +366,17 @@
 
 
 // default grouping for every screen
+.project-gallery-1up {
+    justify-content: center;
+    .project-thumb {
+        flex: 0 1 48%;
+    }
+}
+.project-gallery-2up-break {
+    .project-thumb {
+        flex: 0 0 100%;
+    }
+}
 .project-gallery-2up, .project-gallery-4up, .project-gallery-4up-large,
 .project-gallery-6up, .project-gallery-8up, .project-gallery-12up {
     .project-thumb {
@@ -380,6 +391,12 @@
 
 // alternate groupings for larger screens
 @include screen-small {
+    .project-gallery-2up-break {
+        .project-thumb {
+            flex: 0 0 48%;
+        }
+    }
+
     .project-gallery-3up, .project-gallery-9up {
         .project-thumb {
             flex: 0 1 30%;
