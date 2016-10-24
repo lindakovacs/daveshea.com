@@ -184,9 +184,9 @@ The basic image is where I need it now, so the last thing to do is add a red gra
 
 <h2>Browser Support</h2>
 
-The big caveat for this technique is that support for <code>background-blend-mode</code> in IE/Edge is non-existent right now. As I said at the beginning, it can degrade well, but you need to plan ahead. 
+The big caveats for this technique are that support for <code>background-blend-mode</code> in IE/Edge is non-existent right now, and Safari doesn't support the necessary <code>color</code> blend mode yet, so all examples thus far appear broken in those two browsers.
 
-<strong>Note:</strong> It looks like Safari is treating the examples the same way. New blog, I may have messed up the prefixing. Investigating...
+As I said at the beginning, it <strong>can</strong> degrade well, but you need to plan ahead. 
 
 The multiple layers I'm using here are problematic because without blend modes, the rendered result is a muddied mess. It may not always be that bad, but clearly I need to back up a bit with this example.
 
@@ -206,7 +206,7 @@ The multiple layers I'm using here are problematic because without blend modes, 
 </ul>
 
 
-The compromise I found was pre-toning and contrast-adjusting the photo in my image editor, and then applying the finishing gradients in the browser. I lose out on some of the benefits listed below by doing it this way, but since I know it's only a matter of time before Edge is on board, I'm looking forward to adding the full version to the arsenal in the not so distant future.
+The compromise I found in the end was pre-toning and contrast-adjusting the photo in my image editor, and then applying the finishing gradients in the browser. I lose out on some of the benefits listed below by doing it this way, but since I know it's only a matter of time before Safari and Edge are on board, I'm looking forward to adding the full version to the arsenal in the not so distant future.
 
 <h2>Use Cases</h2>
 
