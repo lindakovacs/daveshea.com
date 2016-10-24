@@ -6,8 +6,8 @@
 </description>
     <link>http://daveshea.com/</link>
     <atom:link href="http://daveshea.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 24 Oct 2016 11:20:11 -0700</pubDate>
-    <lastBuildDate>Mon, 24 Oct 2016 11:20:11 -0700</lastBuildDate>
+    <pubDate>Mon, 24 Oct 2016 12:59:34 -0700</pubDate>
+    <lastBuildDate>Mon, 24 Oct 2016 12:59:34 -0700</lastBuildDate>
     <generator>Jekyll v3.1.2</generator>
     
       <item>
@@ -32,7 +32,7 @@
 	&lt;li class=&quot;project-thumb&quot;&gt;
 		&lt;figure&gt;
 			&lt;div class=&quot;image image-final&quot;&gt;&lt;/div&gt;
-			&lt;figcaption&gt;The end result, all composed in-browser&lt;/figcaption&gt;
+			&lt;figcaption&gt;The end result, composed in-browser if your browser supports it (see below)&lt;/figcaption&gt;
 		&lt;/figure&gt;
 	&lt;/li&gt;
 &lt;/ul&gt;
@@ -208,7 +208,9 @@
 	&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;The compromise I found in the end was pre-toning and contrast-adjusting the photo in my image editor, and then applying the finishing gradients in the browser. I lose out on some of the benefits listed below by doing it this way, but since I know it’s only a matter of time before Safari and Edge are on board, I’m looking forward to adding the full version to the arsenal in the not so distant future.&lt;/p&gt;
+&lt;p&gt;The compromise I found for this use was pre-toning and contrast-adjusting the photo in my image editor, and then applying the finishing gradients in the browser. I lose out on some of the benefits listed below by doing it this way, but since I know it’s only a matter of time before Safari and Edge are on board, I’m looking forward to adding the full version to the arsenal in the not so distant future.&lt;/p&gt;
+
+&lt;p&gt;You could also consider &lt;a href=&quot;http://clearleft.com/thinks/406&quot;&gt;using &lt;code&gt;@supports&lt;/code&gt;&lt;/a&gt; to provide a lighter, blend mode free background stack for these browsers, and a second full-featured stack for browsers that do. Support for &lt;code&gt;background-blend-mode&lt;/code&gt; and &lt;code&gt;@supports&lt;/code&gt; intersects nicely, as IE and Opera Mini will simply ignore the block, while Edge and Safari will choose not to parse it. You’ll need to maintain more code, but &lt;code&gt;@supports&lt;/code&gt; does offer a way to avoid pre-toning the image.&lt;/p&gt;
 
 &lt;h2&gt;Use Cases&lt;/h2&gt;
 

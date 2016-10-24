@@ -24,7 +24,7 @@ And so I stumbled across a new image compositing trick.
 	<li class="project-thumb">
 		<figure>
 			<div class="image image-final"></div>
-			<figcaption>The end result, all composed in-browser</figcaption>
+			<figcaption>The end result, composed in-browser if your browser supports it (see below)</figcaption>
 		</figure>
 	</li>
 </ul>
@@ -206,7 +206,9 @@ The multiple layers I'm using here are problematic because without blend modes, 
 </ul>
 
 
-The compromise I found in the end was pre-toning and contrast-adjusting the photo in my image editor, and then applying the finishing gradients in the browser. I lose out on some of the benefits listed below by doing it this way, but since I know it's only a matter of time before Safari and Edge are on board, I'm looking forward to adding the full version to the arsenal in the not so distant future.
+The compromise I found for this use was pre-toning and contrast-adjusting the photo in my image editor, and then applying the finishing gradients in the browser. I lose out on some of the benefits listed below by doing it this way, but since I know it's only a matter of time before Safari and Edge are on board, I'm looking forward to adding the full version to the arsenal in the not so distant future.
+
+You could also consider <a href="http://clearleft.com/thinks/406">using <code>@supports</code></a> to provide a lighter, blend mode free background stack for these browsers, and a second full-featured stack for browsers that do. Support for <code>background-blend-mode</code> and <code>@supports</code> intersects nicely, as IE and Opera Mini will simply ignore the block, while Edge and Safari will choose not to parse it. You'll need to maintain more code, but <code>@supports</code> does offer a way to avoid pre-toning the image.
 
 <h2>Use Cases</h2>
 
