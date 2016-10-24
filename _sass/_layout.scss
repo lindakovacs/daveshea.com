@@ -147,17 +147,20 @@
     }
 }
 .about-header {
-    padding: 3rem 0;
+    padding: 4rem 0;
     margin: 3rem 0;
     background-color: $grey-colour-light;
     background-image: url(/i/bg-pattern1.min.png);
+    h1 {
+        font-size: 2rem;
+    }
     img {
         float: left;
         position: relative;
         top: 0.5rem;
 
-        width: 64px;
-        margin: 0 1rem 2rem 0;
+        width: 96px;
+        margin: 0 4rem 3rem 0;
         border-radius: 64px;
     }
     .page-title {
