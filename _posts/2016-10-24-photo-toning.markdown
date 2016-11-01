@@ -2,6 +2,7 @@
 layout: post
 title:  "Photo Toning with Gradients &amp; Blend Modes"
 customCSS: blog-phototoning
+excerpt: Your browser now has ample ability to compose image effects on the fly, saving you a trip into an image editor. Here's a new technique for photo toning.
 ---
 
 Your browser now has ample ability to compose image effects on the fly, saving you a trip into an image editor. You can simulate toning effects and deliver the same image in many different ways by combining layered gradients over top of images and blending with the <code>background-blend-mode</code> property.

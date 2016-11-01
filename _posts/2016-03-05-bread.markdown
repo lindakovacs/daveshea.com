@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Everything I Know About Bread"
+excerpt: Great bread only needs four ingredients &#8211; flour, water, salt and yeast. And a great baking technique.
 ---
 
 
