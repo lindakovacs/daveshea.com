@@ -2,27 +2,27 @@
 <html>
 
   <head>
-  <title>Photo Toning with Gradients &amp; Blend Modes</title>
+  <title>Photo Toning with Gradients &amp; Blend&nbsp;Modes</title>
 
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Your browser now has ample ability to compose image effects on the fly, saving you a trip into an image editor. Here's a new technique for photo toning.">
-
-  
-
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:site" content="@mezzoblue">
-  <meta name="twitter:url" property="og:url" content="http://daveshea.com/2016/10/24/photo-toning.html">
-  <meta name="twitter:title" property="og:title" content="Photo Toning with Gradients &amp; Blend Modes">
-  <meta name="twitter:description" property="og:description" content="Your browser now has ample ability to compose image effects on the fly, saving you a trip into an image editor. Here's a new technique for photo toning.">
-  <meta name="twitter:image" property="og:image" content="http://daveshea.com/i/blog/2016/photo-toning-1.jpg">
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Your browser now has ample ability to compose image effects on the fly, saving you a trip into an image editor. Here's a new technique for photo toning." />
 
   
 
-  <link rel="stylesheet" href="/css/main.css">
-  <link rel="stylesheet" href="/css/blog-phototoning.css">
-  <link rel="canonical" href="http://daveshea.com/2016/10/24/photo-toning.html">
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@mezzoblue" />
+  <meta name="twitter:url" property="og:url" content="http://daveshea.com/2016/10/24/photo-toning.html" />
+  <meta name="twitter:title" property="og:title" content="Photo Toning with Gradients &amp; Blend Modes" />
+  <meta name="twitter:description" property="og:description" content="Your browser now has ample ability to compose image effects on the fly, saving you a trip into an image editor. Here's a new technique for photo toning." />
+  <meta name="twitter:image" property="og:image" content="http://daveshea.com/i/blog/2016/photo-toning-1.jpg" />
+
+  
+
+  <link rel="stylesheet" href="/css/main.css" />
+  <link rel="stylesheet" href="/css/blog-phototoning.css" />
+  <link rel="canonical" href="http://daveshea.com/2016/10/24/photo-toning.html" />
   <link rel="alternate" type="application/rss+xml" title="Dave Shea" href="http://daveshea.com/feed.xml" />
   <link rel="shortcut icon" type="image/ico" href="/i/favicon.min.png" />
 
@@ -38,9 +38,9 @@
 
   <div class="wrapper">
 
-    <a class="site-title" href="/">Dave Shea</a>
+    <a class="site-title" href="/">Dave&nbsp;Shea</a>
   	
-	    <a class="site-title-back" href="/blog/">&lsaquo; blog</a>
+	    <a class="site-title-back" href="/blog/">‹&nbsp;blog</a>
 	
 
   </div>
@@ -55,44 +55,44 @@
 	<div class="wrap">
 
 		<header class="post-header">
-			<h1 class="post-title">Photo Toning with Gradients &amp; Blend Modes</h1>
-			<p class="post-meta">October 24, 2016</p>
+			<h1 class="post-title">Photo Toning with Gradients &amp; Blend&nbsp;Modes</h1>
+			<p class="post-meta">October 24,&nbsp;2016</p>
 		</header>
 
-		<p>Your browser now has ample ability to compose image effects on the fly, saving you a trip into an image editor. You can simulate toning effects and deliver the same image in many different ways by combining layered gradients over top of images and blending with the <code>background-blend-mode</code> property.</p>
+		<p>Your browser now has ample ability to compose image effects on the fly, saving you a trip into an image editor. You can simulate toning effects and deliver the same image in many different ways by combining layered gradients over top of images and blending with&nbsp;the <code>background-blend-mode</code>&nbsp;property.</p>
 
-<p>A need arose while building the <a href="http://palatedeck.com/">Palate Deck</a> website. After I’d placed the banner photos on various pages, I realized I’d need to go back into Photoshop to tint them and town down the contrast so I could overlay other text and images.</p>
+<p>A need arose while building&nbsp;the <a href="http://palatedeck.com/">Palate&nbsp;Deck</a> website. After I’d placed the banner photos on various pages, I realized I’d need to go back into Photoshop to tint them and town down the contrast so I could overlay other text and&nbsp;images.</p>
 
-<p>Or… did I?</p>
+<p>Or… did&nbsp;I?</p>
 
-<p>After consulting <a href="http://caniuse.com/#feat=css-backgroundblendmode">caniuse</a> for <code>background-blend-mode</code> support, I realized that a) it’s almost universally supported, and b) if used thoughtfully, it’s an effect that will degrade fairly well when it’s not.</p>
+<p>After&nbsp;consulting <a href="http://caniuse.com/#feat=css-backgroundblendmode">caniuse</a>&nbsp;for <code>background-blend-mode</code> support, I realized that a) it’s almost universally supported, and b) if used thoughtfully, it’s an effect that will degrade fairly well when it’s&nbsp;not.</p>
 
-<p>And so I stumbled across a new image compositing trick.</p>
+<p>And so I stumbled across a new image compositing&nbsp;trick.</p>
 
 <ul class="project-gallery project-gallery-2up">
 	<li class="project-thumb">
 		<figure>
 			<div class="image"></div>
-			<figcaption>The raw photo</figcaption>
+			<figcaption>The raw&nbsp;photo</figcaption>
 		</figure>
 	</li>
 	<li class="project-thumb">
 		<figure>
 			<div class="image image-final"></div>
-			<figcaption>The end result, composed in-browser if your browser supports it (see below)</figcaption>
+			<figcaption>The end result, composed in-browser if your browser supports it (see&nbsp;below)</figcaption>
 		</figure>
 	</li>
 </ul>
 
-<h2>Basic Setup</h2>
+<h2>Basic&nbsp;Setup</h2>
 
-<p>This effect is pretty familiar if you’ve ever digitally tinted a photo: take a photo, then add an adjustment layer over top to tint it, or adjust contrast, or add a gradient.</p>
+<p>This effect is pretty familiar if you’ve ever digitally tinted a photo: take a photo, then add an adjustment layer over top to tint it, or adjust contrast, or add a&nbsp;gradient.</p>
 
-<p>Unlike an image editor, in this case the adjustment layers are browser-generated gradients. And we’re doing this all with background image properties, and the multiple images they support.</p>
+<p>Unlike an image editor, in this case the adjustment layers are browser-generated gradients. And we’re doing this all with background image properties, and the multiple images they&nbsp;support.</p>
 
-<p>But wait, isn’t this what <code>filter</code> is supposed to do? I would have thought so too. However, the latest working draft doesn’t have a mechanism for precise image toning. We’re able to control contrast, and rotate the hue through the spectrum (an ability that’s rarely useful in the real world), but it’s unable to apply specific colour toning and subtle differences to various regions of the image.</p>
+<p>But wait, isn’t this&nbsp;what <code>filter</code> is supposed to do? I would have thought so too. However, the latest working draft doesn’t have a mechanism for precise image toning. We’re able to control contrast, and rotate the hue through the spectrum (an ability that’s rarely useful in the real world), but it’s unable to apply specific colour toning and subtle differences to various regions of the&nbsp;image.</p>
 
-<p>So this is where we need to turn to layering and blending. To make this work, start by setting up your image as <code>background-image</code> instead of an <code>img</code> element. You’ll need to set specific dimensions for your container (and media queries to resize where appropriate) and then use background properties to control it all.</p>
+<p>So this is where we need to turn to layering and blending. To make this work, start by setting up your image&nbsp;as <code>background-image</code> instead of&nbsp;an <code>img</code> element. You’ll need to set specific dimensions for your container (and media queries to resize where appropriate) and then use background properties to control it&nbsp;all.</p>
 
 <ul class="project-gallery project-gallery-2up-break">
 	<li class="project-thumb">
@@ -105,18 +105,17 @@
   height: 200px;
   background-image: url(blog.jpg);
   background-size: cover;
-  background-position: center;
-}</textarea></code>
+  background-position: center;&nbsp;}</textarea></code>
 	</li>
 </ul>
 
-<p>(The above properties are omitted from the following code examples for clarity’s sake, but make sure to re-add them for the proper effect.)</p>
+<p>(The above properties are omitted from the following code examples for clarity’s sake, but make sure to re-add them for the proper&nbsp;effect.)</p>
 
-<p>To give you an idea of the adjustment control you have, I’ll walk through the steps to create the comparison blend at the beginning of this article.</p>
+<p>To give you an idea of the adjustment control you have, I’ll walk through the steps to create the comparison blend at the beginning of this&nbsp;article.</p>
 
 <h2>Tinting</h2>
 
-<p>To start, I wanted to tint the image. This is easily accomplished by laying a solid-colour “gradient” over top with the same colour at both start and end points, then using the <code>color</code> blend mode to mix. By adjusting the alpha value of the end points you can control whether the image is fully tinted with the overlaying colour, or whether it allows natural colour to poke through.</p>
+<p>To start, I wanted to tint the image. This is easily accomplished by laying a solid-colour “gradient” over top with the same colour at both start and end points, then using&nbsp;the <code>color</code> blend mode to mix. By adjusting the alpha value of the end points you can control whether the image is fully tinted with the overlaying colour, or whether it allows natural colour to poke&nbsp;through.</p>
 
 <ul class="project-gallery project-gallery-2up-break">
 	<li class="project-thumb">
@@ -137,18 +136,17 @@
   background-blend-mode: 
     color,
     normal
-  ;
-}</textarea></code>
+  ;&nbsp;}</textarea></code>
 	</li>
 </ul>
 
 <h2>Contrast</h2>
 
-<p>The next step was dropping back contrast to let me add text over top. I’m not going to show the text here, but let’s talk about the contrast.</p>
+<p>The next step was dropping back contrast to let me add text over top. I’m not going to show the text here, but let’s talk about the&nbsp;contrast.</p>
 
-<p>Unlike tinting, we <em>can</em> control brightness and contrast with <code>filter</code> here. But it’s not ideal since it only applies to the final rendered stack, which means it takes all previous effects with it. In this case I’d like the contrast adjustment to occur on the image before the tint and the red gradient is overlaid, so it won’t work for me.</p>
+<p>Unlike tinting,&nbsp;we <em>can</em> control brightness and contrast&nbsp;with <code>filter</code> here. But it’s not ideal since it only applies to the final rendered stack, which means it takes all previous effects with it. In this case I’d like the contrast adjustment to occur on the image before the tint and the red gradient is overlaid, so it won’t work for&nbsp;me.</p>
 
-<p>So we’ll have to fake it with more gradients. I’ve chosen to use two; one a white layer set to 50% opacity and the lighten blend mode, the second a 50% opacity black layer set to darken. Combining those two together lightens the shadows and darkens the highlights. It results in a much greyer image, but that doesn’t matter since I’m applying the tint over top.</p>
+<p>So we’ll have to fake it with more gradients. I’ve chosen to use two; one a white layer set to 50% opacity and the lighten blend mode, the second a 50% opacity black layer set to darken. Combining those two together lightens the shadows and darkens the highlights. It results in a much greyer image, but that doesn’t matter since I’m applying the tint over&nbsp;top.</p>
 
 <ul class="project-gallery project-gallery-2up-break">
 	<li class="project-thumb">
@@ -181,14 +179,13 @@
 	lighten,
 	darken,
 	normal;
-  ;
-}</textarea></code>
+  ;&nbsp;}</textarea></code>
 	</li>
 </ul>
 
 <h2>Gradients</h2>
 
-<p>The basic image is where I need it now, so the last thing to do is add a red gradient at top of the stack to get the final tone I was shooting for. This last layer has some opaqueness and is blended normally to drop the finished contrast further.</p>
+<p>The basic image is where I need it now, so the last thing to do is add a red gradient at top of the stack to get the final tone I was shooting for. This last layer has some opaqueness and is blended normally to drop the finished contrast&nbsp;further.</p>
 
 <ul class="project-gallery project-gallery-2up-break">
 	<li class="project-thumb">
@@ -227,41 +224,40 @@
 	lighten,
 	darken,
 	normal;
-  ;
-}</textarea></code>
+  ;&nbsp;}</textarea></code>
 	</li>
 </ul>
 
-<h2>Browser Support</h2>
+<h2>Browser&nbsp;Support</h2>
 
-<p>The big caveats for this technique are that support for <code>background-blend-mode</code> in IE/Edge is non-existent right now, and Safari doesn’t support the necessary <code>color</code> blend mode yet, so all examples thus far appear broken in those two browsers.</p>
+<p>The big caveats for this technique are that support&nbsp;for <code>background-blend-mode</code> in IE/Edge is non-existent right now, and Safari doesn’t support the&nbsp;necessary <code>color</code> blend mode yet, so all examples thus far appear broken in those two&nbsp;browsers.</p>
 
-<p>As I said at the beginning, it <strong>can</strong> degrade well, but you need to plan ahead.</p>
+<p>As I said at the beginning,&nbsp;it <strong>can</strong> degrade well, but you need to plan&nbsp;ahead.</p>
 
-<p>The multiple layers I’m using here are problematic because without blend modes, the rendered result is a muddied mess. It may not always be that bad, but clearly I need to back up a bit with this example.</p>
+<p>The multiple layers I’m using here are problematic because without blend modes, the rendered result is a muddied mess. It may not always be that bad, but clearly I need to back up a bit with this&nbsp;example.</p>
 
 <ul class="project-gallery project-gallery-2up-break">
 	<li class="project-thumb">
 		<figure>
 			<div class="image image-final-noblend"></div>
-			<figcaption>When blend modes aren't supported</figcaption>
+			<figcaption>When blend modes aren’t&nbsp;supported</figcaption>
 		</figure>
 	</li>
 	<li class="project-thumb">
 		<figure>
 			<div class="image image-precomposed"></div>
-			<figcaption>Much better, with a pre-toned photo</figcaption>
+			<figcaption>Much better, with a pre-toned&nbsp;photo</figcaption>
 		</figure>
 	</li>
 </ul>
 
-<p>The compromise I found for this use was pre-toning and contrast-adjusting the photo in my image editor, and then applying the finishing gradients in the browser. I lose out on some of the benefits listed below by doing it this way, but since I know it’s only a matter of time before Safari and Edge are on board, I’m looking forward to adding the full version to the arsenal in the not so distant future.</p>
+<p>The compromise I found for this use was pre-toning and contrast-adjusting the photo in my image editor, and then applying the finishing gradients in the browser. I lose out on some of the benefits listed below by doing it this way, but since I know it’s only a matter of time before Safari and Edge are on board, I’m looking forward to adding the full version to the arsenal in the not so distant&nbsp;future.</p>
 
-<p>You could also consider <a href="http://clearleft.com/thinks/406">using <code>@supports</code></a> to provide a lighter, blend mode free background stack for these browsers, and a second full-featured stack for browsers that do. Support for <code>background-blend-mode</code> and <code>@supports</code> intersects nicely, as IE and Opera Mini will simply ignore the block, while Edge and Safari will choose not to parse it. You’ll need to maintain more code, but <code>@supports</code> does offer a way to avoid pre-toning the image.</p>
+<p>You could also&nbsp;consider <a href="http://clearleft.com/thinks/406">using <code>@supports</code></a> to provide a lighter, blend mode free background stack for these browsers, and a second full-featured stack for browsers that do. Support&nbsp;for <code>background-blend-mode</code>&nbsp;and <code>@supports</code> intersects nicely, as IE and Opera Mini will simply ignore the block, while Edge and Safari will choose not to parse it. You’ll need to maintain more code,&nbsp;but <code>@supports</code> does offer a way to avoid pre-toning the&nbsp;image.</p>
 
-<h2>Use Cases</h2>
+<h2>Use&nbsp;Cases</h2>
 
-<p>So how useful is this, really? Why build up your image toning in-browser instead of simply pre-composing in an image editor?</p>
+<p>So how useful is this, really? Why build up your image toning in-browser instead of simply pre-composing in an image&nbsp;editor?</p>
 
 <ul class="project-gallery project-gallery-4up">
 	<li class="project-thumb">
@@ -278,10 +274,10 @@
 	</li>
 </ul>
 
-<p>The answer is flexibility. You may not always be in control of the original image. It might be user-generated or coming in from a CDN. Or you may want to re-purpose it in different sections of your site. Being able to manipulate any source image in the browser is just one more trick for controlling the uncontrollable.</p>
+<p>The answer is flexibility. You may not always be in control of the original image. It might be user-generated or coming in from a CDN. Or you may want to re-purpose it in different sections of your site. Being able to manipulate any source image in the browser is just one more trick for controlling the&nbsp;uncontrollable.</p>
 
 <p class="comments">
-	Have comments on this? <a href="http://twitter.com/home?status=%40mezzoblue%20my%20thoughts%20on%20your%20photo%20toning%20post%20...">Tweet at me</a>.
+	Have comments on&nbsp;this? <a href="http://twitter.com/home?status=%40mezzoblue%20my%20thoughts%20on%20your%20photo%20toning%20post%20...">Tweet at&nbsp;me</a>.
 </p>
 
 	</div>
@@ -309,12 +305,12 @@
 				<a href="https://github.com/mezzoblue">github</a>
 			</li>
 			<li class="link">
-				<a href="/about/">About Me</a>
+				<a href="/about/">About&nbsp;Me</a>
 			</li>
 		</ul>
 
 	    <p>
-	    	<span>&copy; Copyright 2015&#8211;2016 Dave Shea, All Rights Reserved.</span>
+	    	<span>© Copyright 2015–2016 Dave Shea, All Rights&nbsp;Reserved.</span>
 	    	<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">License</a>
 	    </p>
   

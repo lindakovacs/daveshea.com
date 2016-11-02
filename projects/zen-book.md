@@ -2,6 +2,9 @@
 layout: project
 title: The Zen of CSS Design
 permalink: /projects/zen-book/
+customMeta: true
+previewImage: /i/projects/zen-book/photo2.jpg
+excerpt: A unique book that teaches design and web development principles, using the CSS Zen Garden as a case study.
 makerbase: https://makerba.se/p/kmz917/thezenofcssdesign
 slug: zen-book
 project: true

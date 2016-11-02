@@ -2,6 +2,9 @@
 layout: project
 title: Nautical Disaster
 permalink: /projects/nautical-disaster/
+customMeta: true
+previewImage: /i/projects/nd/sketch5.jpg
+excerpt: A competition-winning best of show brew scaled up to 28-hectoliter (24 barrel) commercial system and released commercially in bottles and kegs.
 makerbase: https://makerba.se/p/eng3x1/nauticaldisaster
 slug: nautical-disaster
 project: true

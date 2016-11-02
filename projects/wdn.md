@@ -2,6 +2,9 @@
 layout: project
 title: Web Directions North
 permalink: /projects/wdn/
+customMeta: true
+previewImage: /i/projects/wdn/enthralled.min.jpg
+excerpt: Two fantastic days of conference followed by a weekend of skiing and snowboarding in scenic Whistler with almost 400 people attending each of the two years it ran.
 makerbase: https://makerba.se/p/9s2985/webdirectionsnorth
 slug: wdn
 project: true

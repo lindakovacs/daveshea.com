@@ -2,6 +2,9 @@
 layout: project
 title: mezzoblue
 permalink: /projects/mezzoblue/
+customMeta: true
+previewImage: /i/projects/mezzoblue/fountain.min.png
+excerpt: An influential weblog that analyzed all things web during a pivotal period in the development of web design.
 makerbase: https://makerba.se/p/b928xf/mezzobluedotcom
 slug: mezzoblue
 project: true

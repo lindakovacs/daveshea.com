@@ -351,6 +351,7 @@ $chalkworkBaseColour: #77231f;
         }
 
         img {
+            display: block;
             max-width: none;
 
             @include screen-large {

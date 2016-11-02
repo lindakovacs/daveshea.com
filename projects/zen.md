@@ -2,6 +2,9 @@
 layout: project
 title: CSS Zen Garden
 permalink: /projects/zen/
+customMeta: true
+previewImage: /i/projects/zen/main.jpg
+excerpt: A landmark site in the development of web standards. Thousands of design submissions from 30+ countries, translated to multiple languages, and remains a common learning tool for web curriculums around the world.
 makerbase: https://makerba.se/p/va848d/csszengarden
 slug: zen
 project: true

@@ -2,6 +2,9 @@
 layout: project
 title: The Palate Deck
 permalink: /projects/palatedeck/
+customMeta: true
+previewImage: /i/blog/2016/photo-toning-1.jpg
+excerpt: Playing cards that offer beer information and casual tasting guidance for the many conversations that happen over beer.
 slug: palatedeck
 project: true
 weight: 10

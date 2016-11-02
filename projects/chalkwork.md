@@ -2,6 +2,9 @@
 layout: project
 title: Chalkwork Icon Library
 permalink: /projects/chalkwork/
+customMeta: true
+previewImage: /i/projects/chalkwork/lead4.min.png
+excerpt: A high-quality visually consistent collection of over 2,500 icons, available in multiple sizes and file formats.
 makerbase: https://makerba.se/p/p15643/chalkworkiconset
 slug: chalkwork
 project: true

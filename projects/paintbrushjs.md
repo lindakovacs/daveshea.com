@@ -2,6 +2,9 @@
 layout: project
 title: Paintbrush JS
 permalink: /projects/paintbrush/
+customMeta: true
+previewImage: /i/projects/paintbrush/main2.min.png
+excerpt: A Javascript library to bring common image processing effects to the browser, realtime.
 makerbase: https://makerba.se/p/1v6525/paintbrushjs
 slug: paintbrush
 project: true

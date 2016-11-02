@@ -2,6 +2,9 @@
 layout: project
 title: Style &amp; Class
 permalink: /projects/style-class/
+customMeta: true
+previewImage: /i/projects/s&c/fisher.jpeg
+excerpt: A Vancouver-based event series that covers the intersection of design and coding for the web. Style &amp; Class has produced many events drawing up to 400 people and dozens of speakers locally and from around the world.
 makerbase: https://makerba.se/p/x2t0q4/stylenclass
 slug: style-class
 project: true

@@ -2,6 +2,9 @@
 layout: project
 title: Elevation
 permalink: /projects/elevation/
+customMeta: true
+previewImage: /i/projects/elevation/lead.png
+excerpt: Software visualizer built in Processing that renders personal GPS data interactively in 3D space.
 makerbase: https://makerba.se/p/210678/elevation
 slug: elevation
 project: true
