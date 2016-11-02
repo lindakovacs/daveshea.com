@@ -6,14 +6,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
+  {% if page.customMeta %}
 
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@mezzoblue">
+  <meta name="twitter:url" property="og:url" content="http://daveshea.com{{ page.url }}">
+  <meta name="twitter:title" property="og:title" content="{{ page.title }}">
+  <meta name="twitter:description" property="og:description" content="{{ page.excerpt }}">
+  <meta name="twitter:image" property="og:image" content="http://daveshea.com{{ page.previewImage }}">
+
+  {% else %}
   <meta name="twitter:card" content="summary">
   <meta name="twitter:site" content="@mezzoblue">
   <meta name="twitter:url" property="og:url" content="http://daveshea.com/">
   <meta name="twitter:title" property="og:title" content="Dave Shea">
   <meta name="twitter:description" property="og:description" content="A selection of projects">
   <meta name="twitter:image" property="og:image" content="http://daveshea.com/i/favicon.min.png">
-
+  {% endif %}
 
   <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
   {% if page.customCSS %}<link rel="stylesheet" href="/css/{{ page.customCSS }}.css">{% endif %}
