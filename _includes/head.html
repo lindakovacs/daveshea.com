@@ -7,14 +7,14 @@
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
   {% if page.customMeta %}
-
   <meta name="twitter:card" content="summary">
   <meta name="twitter:site" content="@mezzoblue">
   <meta name="twitter:url" property="og:url" content="http://daveshea.com{{ page.url }}">
   <meta name="twitter:title" property="og:title" content="{{ page.title }}">
   <meta name="twitter:description" property="og:description" content="{{ page.excerpt }}">
+    {% if page.previewImage %}
   <meta name="twitter:image" property="og:image" content="http://daveshea.com{{ page.previewImage }}">
-
+    {% endif %}
   {% else %}
   <meta name="twitter:card" content="summary">
   <meta name="twitter:site" content="@mezzoblue">
