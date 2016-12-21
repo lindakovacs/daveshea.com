@@ -14,21 +14,13 @@
 
 	.cafe, .address {
 		display: block;
-		padding: 0 2rem;
 	}
 
-	.cafe, .address {
-		position: absolute;
-		color: #fff;
-		text-shadow: rgba(0,0,0,0.25) 0 5px 5px;
-	}
 	.cafe {
-		bottom: 5rem;
-		font-size: 2.5rem;
+		margin: 0;
 		text-transform: none;
 	}
 	.address {
-		bottom: 4rem;
 		opacity: 0.9;
 	}
 	.source {
@@ -40,13 +32,27 @@
 	}
 
 
-	&.right {
+	@include screen-small {
 		.cafe, .address {
-			right: 0;
-			text-align: right;
+			position: absolute;
+			padding: 0 2rem;
+			color: #fff;
+			text-shadow: rgba(0,0,0,0.25) 0 5px 5px;
+		}
+		.cafe {
+			font-size: 1.5rem;
+			bottom: 6rem;
+		}
+		.address {
+			bottom: 4rem;
 		}
 	}
 
+	@include screen-medium {
+		.cafe {
+			font-size: 2.5rem;
+		}
+	}
 }
 
 

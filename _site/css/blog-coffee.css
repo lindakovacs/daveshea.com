@@ -117,18 +117,11 @@ em, .project-role, .site-footer p {
   position: relative;
   margin: 5rem 0 1rem 0; }
   .coffee-photo .cafe, .coffee-photo .address {
-    display: block;
-    padding: 0 2rem; }
-  .coffee-photo .cafe, .coffee-photo .address {
-    position: absolute;
-    color: #fff;
-    text-shadow: rgba(0, 0, 0, 0.25) 0 5px 5px; }
+    display: block; }
   .coffee-photo .cafe {
-    bottom: 5rem;
-    font-size: 2.5rem;
+    margin: 0;
     text-transform: none; }
   .coffee-photo .address {
-    bottom: 4rem;
     opacity: 0.9; }
   .coffee-photo .source {
     font-size: 1.1375rem;
@@ -137,9 +130,20 @@ em, .project-role, .site-footer p {
     margin: 0;
     color: #999;
     text-align: right; }
-  .coffee-photo.right .cafe, .coffee-photo.right .address {
-    right: 0;
-    text-align: right; }
+  @media (min-width: 641px) {
+    .coffee-photo .cafe, .coffee-photo .address {
+      position: absolute;
+      padding: 0 2rem;
+      color: #fff;
+      text-shadow: rgba(0, 0, 0, 0.25) 0 5px 5px; }
+    .coffee-photo .cafe {
+      font-size: 1.5rem;
+      bottom: 6rem; }
+    .coffee-photo .address {
+      bottom: 4rem; } }
+  @media (min-width: 801px) {
+    .coffee-photo .cafe {
+      font-size: 2.5rem; } }
 
 .hm .address {
   font-size: 1.1375rem;
