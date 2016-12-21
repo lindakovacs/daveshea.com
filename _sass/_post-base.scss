@@ -19,11 +19,42 @@
 
 		h3 {
 			text-transform: none;
-			margin: 0 0 $spacing-unit / 2 0;
+			margin: 0 1.5rem 0 0;
+			float: left;
+
+		}
+
+		a {
+			display: block;
+			padding: 1rem 2rem;
+			margin: -1rem -2rem;
+
+			color: $text-colour;
+			text-decoration: none;
+			background-color: none;
+
+			transition: background-color 0.15s ease-in;
+
+			&:hover, &:focus {
+				background-color: $grey-colour-lighter;
+			}
 		}
 	}
 	.post-meta {
 		@include type-alternate-italic;
+
+		display: inline-block;
+		color: $text-colour-muted;
+		line-height: $base-line-height * 1.25;
+		&::before {
+			content: "\2318";
+			padding-right: 1rem;
+			color: $text-colour-muted;
+			font-style: normal;
+		}
+	}
+	.post-excerpt {
+		clear: left;
 	}
 
 }
@@ -57,6 +88,11 @@
 	        margin: 0 auto;
 	    }
 	}
+
+
+	//
+	//  specific content items
+	//
 
 	h2 {
 		margin: $spacing-unit * 1.5 0 $spacing-unit / 2 0;
@@ -114,5 +150,13 @@
 		@include type-alternate-italic;
 	}
 
+	.map {
+		width: 100%;
+		margin: 2rem 0;
+		border: none;
+	}
+
 }
+
+
 

@@ -1,0 +1,147 @@
+/*
+
+    Base media query mixins
+
+*/
+/*
+
+    Typography mixins
+
+*/
+/*
+
+ Base type declaration
+
+*/
+body, p {
+  font-family: "soleil", sans-serif;
+  font-size: 1.3rem;
+  line-height: 1.7;
+  font-weight: normal;
+  -webkit-text-size-adjust: 100%; }
+
+h2, h3, h4, h5, h6 {
+  font-weight: bold; }
+
+h1 {
+  font-size: 1.95rem;
+  text-transform: uppercase; }
+
+h2 {
+  font-size: 1.56rem;
+  text-transform: uppercase; }
+
+h3 {
+  font-size: 1.625rem; }
+
+h4 {
+  font-size: 1.42188rem; }
+
+h5 {
+  font-size: 1.3rem;
+  font-weight: normal;
+  text-transform: uppercase; }
+
+h6 {
+  font-size: 1.1375rem;
+  font-weight: normal; }
+
+em {
+  font-family: "clavo", serif;
+  font-weight: 300;
+  font-style: italic; }
+
+@media (min-width: 641px) {
+  h1 {
+    font-size: 2.6rem; }
+
+  h2 {
+    font-size: 1.95rem; } }
+.site-title {
+  letter-spacing: 0.3rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: bold; }
+
+.project-list {
+  line-height: 1.2; }
+  .project-list .project-title {
+    font-family: "clavo", serif;
+    font-weight: 300; }
+  @media (min-width: 641px) {
+    .project-list .project-title {
+      font-size: 2rem; } }
+
+.site-description, .project-date {
+  font-size: 1rem;
+  font-weight: normal; }
+
+.page-project .project-title {
+  font-size: 2rem;
+  line-height: 1.2;
+  text-align: center;
+  font-family: "clavo", serif;
+  font-weight: 300; }
+@media (min-width: 641px) {
+  .page-project .project-title {
+    font-size: 3rem;
+    line-height: 1.2;
+    text-align: left; } }
+
+.project-summary p {
+  font-size: 1.2rem;
+  line-height: 1.5; }
+  .project-summary p.project-role {
+    font-size: 1rem; }
+
+em, .project-role, .site-footer p {
+  font-size: 1.2rem;
+  font-family: "clavo", serif;
+  font-weight: 300;
+  font-style: italic; }
+
+@media (min-width: 801px) {
+  .site-description, .project-date {
+    font-size: 1.4rem;
+    letter-spacing: 0.05rem; }
+
+  .page-project .project-title {
+    font-size: 4rem;
+    letter-spacing: -0.1rem; }
+
+  .project-summary p {
+    font-size: 1.8rem;
+    line-height: 2; } }
+.coffee-photo {
+  position: relative;
+  margin: 5rem 0 1rem 0; }
+  .coffee-photo .cafe, .coffee-photo .address {
+    display: block;
+    padding: 0 2rem; }
+  .coffee-photo .cafe, .coffee-photo .address {
+    position: absolute;
+    color: #fff;
+    text-shadow: rgba(0, 0, 0, 0.25) 0 5px 5px; }
+  .coffee-photo .cafe {
+    bottom: 5rem;
+    font-size: 2.5rem;
+    text-transform: none; }
+  .coffee-photo .address {
+    bottom: 4rem;
+    opacity: 0.9; }
+  .coffee-photo .source {
+    font-size: 1.1375rem;
+    font-weight: normal;
+    display: block;
+    margin: 0;
+    color: #999;
+    text-align: right; }
+  .coffee-photo.right .cafe, .coffee-photo.right .address {
+    right: 0;
+    text-align: right; }
+
+.hm .address {
+  font-size: 1.1375rem;
+  font-weight: normal;
+  color: #999; }
