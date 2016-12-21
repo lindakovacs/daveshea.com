@@ -112,11 +112,11 @@ A comfy multi-roaster cafe in Chinatown with free wifi and ample power outlets. 
 	<a href="https://www.instagram.com/p/BDWP09YPiPC/" class="source">(source)</a>
 </div>
 
-Located in a pocket at the front of an antique shop, calling Aubade a ‘cafe’ would be over-selling it. But don’t let the size or location throw you off, this one man show is perhaps one of the most interesting things happening in the local coffee scene. 
+Located in a pocket at the front of an antique shop, calling Aubade a 'cafe' would be over-selling it. But don’t let the size or location throw you off, this one man show is perhaps one of the most interesting things happening in the local coffee scene. 
 
-Bringing Melbourne’s inventive coffee culture back to Vancouver, owner & operator Eldric Kuzma recently took third in the Canadian Aeropress Championships and it shows; his technique is unusually scientific, approaching extraction in phases and separating smaller volumes to isolate acids before blending for the final, balanced cup. 
+Bringing Melbourne’s inventive coffee culture back to Vancouver, owner & operator Eldric recently took third in the Canadian Aeropress Championships and it shows; his technique is unusually scientific, approaching extraction in phases and separating smaller volumes to isolate acids before blending for the final, balanced cup. 
 
-You can order espresso-based drinks as well, and you’ll be encouraged to skip the (consciously vegan-only) milk and experience the coffee in its natural state with a slight pricing discount. Don’t expect a wide array of food or seating; there isn’t much of either available. Also literally across the street from Propaganda (see previouse).
+You can order espresso-based drinks as well, and you’ll be encouraged to skip the (consciously vegan-only) milk and experience the coffee in its natural state with a slight pricing discount. Don’t expect a wide array of food or seating; there isn’t much of either available. Also literally across the street from Propaganda (see previous).
 
 
 <div class="hm">
