@@ -3,7 +3,7 @@ layout: post
 title:  "Vancouver Coffee Essentials"
 customCSS: blog-coffee
 customMeta: true
-previewImage: /i/blog/2016/photo-toning-1.jpg
+previewImage: /i/blog/2016/coffee-1.jpg
 excerpt: Like other major west coast cities, Vancouver has some excellent coffee options if you know where to look. Here's a tour of the best of our coffee culture.
 ---
 
