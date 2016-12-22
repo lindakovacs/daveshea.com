@@ -71,7 +71,7 @@ While it’s accurate to call Matchstick a top notch roastery that partners with
 	<a href="https://www.instagram.com/p/BOGq4rFDtCV/?taken-by=movingcoffee" class="source">(source)</a>
 </div>
 
-This is a bit of an unusual one that it isn’t likely to show up on the tourist maps. During the week this tiny back alley shop operates as Taste & See Shop, but on weekends it becomes Moving Coffee operated by a passionate roaster. You can expect fine beans with a story behind them as well as a meticulous approach to crafting each coffee and even <a href="http://www.movingcoffee.com/collections/coffee">unique products</a> like their cold brew Morning Whisky. 
+This is a bit of an unusual one that isn’t likely to show up on the tourist maps. During the week this tiny back alley shop operates as Taste & See Shop, but on weekends it becomes Moving Coffee operated by a passionate roaster. You can expect fine beans with a story behind them as well as a meticulous approach to crafting each coffee and even <a href="http://www.movingcoffee.com/collections/coffee">unique products</a> like their cold brew Morning Whisky. 
 
 Due to the size it’s not a place you can expect to come and park for an extended period, but if you’re visiting Granville Island on a weekend it’s worth the detour for quite possibly the highest quality cup of coffee you’ll find anywhere in the city.
 
@@ -86,7 +86,7 @@ Due to the size it’s not a place you can expect to come and park for an extend
 </div>
 
 
-Prado is a cozy mini-chain with good coffee and snacks. Starting life as a single independent cafe on Commercial Dr., it's now wholly owned by local roaster 49th Parallel and serves exclusively their beans, which are certainly 
+Prado is a cozy mini-chain with good coffee and snacks. Starting life as a single independent cafe on Commercial Dr., it's now wholly owned by local roaster 49th Parallel and serves exclusively their beans, which are certainly in the top tier of local roasters.
 
 Each cafe has a personality of its own, with the newer locations offering a more refined aesthetic and expanded <a href="http://pradocafevancouver.com/menu">food menus</a>. They have some great cold options during the summer, including their orange slice adorned espresso tonic that is far better than it has any right to be.
 
