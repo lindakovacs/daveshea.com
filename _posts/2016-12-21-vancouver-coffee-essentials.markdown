@@ -86,7 +86,7 @@ Due to the size it’s not a place you can expect to come and park for an extend
 </div>
 
 
-Prado is a cozy mini-chain with good coffee and snacks. Starting life as a single independent cafe on Commercial Dr., it's now wholly owned by local roaster 49th Parallel and serves exclusively their beans, which are certainly in the top tier of local roasters.
+Prado is a cozy mini-chain with good coffee and snacks. Starting life as a single independent cafe on Commercial Dr., it's now owned by Sammy Piccolo, co-owner of local roaster 49th Parallel. Prado understandably serves exclusively their beans, which are certainly in the top tier of local roasters.
 
 Each cafe has a personality of its own, with the newer locations offering a more refined aesthetic and expanded <a href="http://pradocafevancouver.com/menu">food menus</a>. They have some great cold options during the summer, including their orange slice adorned espresso tonic that is far better than it has any right to be.
 
