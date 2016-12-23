@@ -15,24 +15,37 @@
 */
 body, p {
   font-family: "soleil", sans-serif;
-  font-size: 1.3rem;
-  line-height: 1.7;
+  font-size: 1.105rem;
+  line-height: 1.53;
   font-weight: normal;
   -webkit-text-size-adjust: 100%; }
+  @media (min-width: 641px) {
+    body, p {
+      font-size: 1.3rem;
+      line-height: 1.7; } }
 
 h2, h3, h4, h5, h6 {
   font-weight: bold; }
 
 h1 {
-  font-size: 1.95rem;
+  font-size: 1.625rem;
   text-transform: uppercase; }
+  @media (min-width: 641px) {
+    h1 {
+      font-size: 1.95rem; } }
 
 h2 {
-  font-size: 1.56rem;
+  font-size: 1.43rem;
   text-transform: uppercase; }
+  @media (min-width: 641px) {
+    h2 {
+      font-size: 1.625rem; } }
 
 h3 {
-  font-size: 1.625rem; }
+  font-size: 1.3rem; }
+  @media (min-width: 641px) {
+    h3 {
+      font-size: 1.495rem; } }
 
 h4 {
   font-size: 1.42188rem; }

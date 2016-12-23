@@ -14,10 +14,15 @@
 */
 @mixin type-base {
     font-family: $base-font-family;
-    font-size: $base-font-size;
-    line-height: $base-line-height;
+    font-size: $base-font-size * 0.85;
+    line-height: $base-line-height * 0.9;
     font-weight: normal;
     -webkit-text-size-adjust: 100%;
+
+    @include screen-small {
+        font-size: $base-font-size;
+        line-height: $base-line-height;
+    }
 }
 
 @mixin type-base-small {
@@ -39,8 +44,23 @@
     font-style: italic;
 }
 
-@mixin type-header-primary {
+@mixin type-header-xlarge {
     font-size: $base-font-size * 1.25;
+    @include screen-small {
+        font-size: $base-font-size * 1.5;
+    }
+}
+@mixin type-header-large {
+    font-size: $base-font-size * 1.1;
+    @include screen-small {
+        font-size: $base-font-size * 1.25;
+    }
+}
+@mixin type-header-medium {
+    font-size: $base-font-size;
+    @include screen-small {
+        font-size: $base-font-size * 1.15;
+    }
 }
 @mixin type-header-secondary {
     font-size: $base-font-size;
@@ -62,15 +82,15 @@ h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    font-size: $base-font-size * 1.5;
+    @include type-header-xlarge;
     text-transform: uppercase;
 }
 h2 {
-    font-size: $base-font-size * 1.2;
+    @include type-header-large;
     text-transform: uppercase;
 }
 h3 {
-    @include type-header-primary;
+    @include type-header-medium;
 }
 h4 {
     font-size: $base-font-size * 1.09375;

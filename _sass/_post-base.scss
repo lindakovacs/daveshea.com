@@ -6,6 +6,15 @@
 
 
 
+.blog-home {
+	.site-header {
+	}
+}
+.blog-post {
+	.site-title-back {
+		display: block;
+	}
+}
 
 //
 //  blog post listing layout
@@ -67,13 +76,14 @@
 
 .post-header {
 	.post-title {
+		@include type-header-xlarge;
 		margin-bottom: 0;
-		font-size: 2rem;
+		text-transform: none;
 	}
 	.post-meta {
+		@include type-alternate-italic;
 		margin-top: 0;
 		margin-bottom: $spacing-unit * 2;
-		@include type-alternate-italic;
 	}
 }
 

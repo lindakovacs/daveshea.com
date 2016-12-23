@@ -5,7 +5,11 @@
 
   <body{% if page.class %} class="{{ page.class }}"{% endif %}>
 
-    {% include header.html %}
+  	{% if page.header %}
+    	{% include {{page.header}} %}
+    {% else %}
+    	{% include header.html %}
+    {% endif %}
 
     {{ content }}
 

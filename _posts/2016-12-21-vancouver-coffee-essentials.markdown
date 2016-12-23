@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  "Vancouver Coffee Essentials"
+class: blog-post
+header: header-blog.html
 customCSS: blog-coffee
 customMeta: true
 previewImage: /i/blog/2016/coffee-1.jpg
@@ -116,7 +118,7 @@ Located in a pocket at the front of an antique shop, calling Aubade a 'cafe' wou
 
 Bringing Melbourne’s inventive coffee culture back to Vancouver, owner & operator Eldric recently took third in the Canadian Aeropress Championships and it shows; his technique is unusually scientific, approaching extraction in phases and separating smaller volumes to isolate acids before blending for the final, balanced cup. 
 
-You can order espresso-based drinks as well, and you’ll be encouraged to skip the (consciously vegan-only) milk and experience the coffee in its natural state with a slight pricing discount. Don’t expect a wide array of food or seating; there isn’t much of either available. Also literally across the street from Propaganda (see previous).
+You can order espresso-based drinks as well, and you’ll be encouraged to skip the (purposely vegan-only) milk and experience the coffee in its natural state with a slight pricing discount. Don’t expect a wide array of food or seating; there isn’t much of either available. Also literally across the street from Propaganda (see previous).
 
 
 <div class="hm">
@@ -138,3 +140,7 @@ Small Victory Bakery <span class="address">(1088 Homer St)</span>,
 The Birds &amp; The Beats <span class="address">(55 Powell St)</span>
 
 </div>
+
+<p class="comments">
+	Have comments on this? <a href="http://twitter.com/home?status=%40mezzoblue%20thoughts%20on%20your%20coffee%20post%20...">Tweet at me</a>.
+</p>

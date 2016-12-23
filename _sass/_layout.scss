@@ -36,6 +36,7 @@
     text-decoration: none;
     padding: 0.25rem 1rem;
     border-radius: 2rem;
+    font-size: 1rem;
 
     transition: background-color $animation-timing ease-out;
 
@@ -98,11 +99,12 @@
         text-align: center;
     }
     .link {
-        display: inline;
+        display: inline-block;
         flex: none;
         padding: 0 1rem;
         margin: 0;
         vertical-align: bottom;
+        word-wrap: nowrap;
 
         a {
             color: rgba(0, 0, 0, 0.5);
