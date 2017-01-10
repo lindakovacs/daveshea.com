@@ -84,10 +84,13 @@
     padding: 3rem 0;
     text-align: center;
     background-color: $grey-colour-light;
-    background-image: url(/i/bg-pattern2.min.png);
+    background-image: url(/i/bg-pattern3.min.png);
 
     p {
         margin-bottom: 0;
+        a {
+            color: inherit;
+        }
     }
     span {
         opacity: 0.7;
@@ -152,7 +155,7 @@
     padding: 4rem 0;
     margin: 3rem 0;
     background-color: $grey-colour-light;
-    background-image: url(/i/bg-pattern1.min.png);
+    background-image: url(/i/bg-pattern3.min.png);
     h1 {
         font-size: 2rem;
     }

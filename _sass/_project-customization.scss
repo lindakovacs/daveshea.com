@@ -191,7 +191,7 @@ $fhfBaseColour: #ddc8b3;
 //
 $ndTextColour: #ea8d08;
 $ndAccentColour: #309acb;
-$ndBaseColour: #350d09;
+$ndBaseColour: #4e2825;
 @include styleProject("nautical-disaster", $ndBaseColour, $ndTextColour, $ndAccentColour);
 @include styleProjectImage("nautical-disaster") {
     background-image: 
