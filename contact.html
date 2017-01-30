@@ -1,0 +1,32 @@
+---
+layout: post
+title: Contact Me
+short-title: Contact
+class: contact
+permalink: /contact/
+nav-show: false
+---
+
+<p class="form-contact-intro">If you have a question for me about something you found on this site or whatever else, please feel free to get in touch. I read every email sent my way, though I may not reply to all.</p>
+
+<form action="https://formspree.io/mezzoblue@gmail.com" method="POST">
+   <div class="form-row">
+    <label>Name:</label>
+    <input type="name" name="name">
+   </div>
+   <div class="form-row">
+    <label>Email:</label>
+    <input type="email" name="email">
+   </div>
+   <div class="form-row">
+    <label>Message:</label>
+    <textarea name="message"></textarea>
+   </div>
+   <div class="form-row form-submit">
+    <input type="hidden" name="_next" value="/contact-sent/" />
+   	<input type="hidden" name="_subject" value="Your message" />
+   	<input type="text" name="_gotcha" style="display:none" />
+    <input type="hidden" name="_cc" value="mezzoblue@gmail.com" />
+    <button type="submit" class="button">Send</button>
+   </div>
+</form>

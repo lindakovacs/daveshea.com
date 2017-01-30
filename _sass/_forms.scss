@@ -1,0 +1,86 @@
+/*
+
+    Form element base styling
+
+*/
+
+
+//
+// general site-wide form element styling
+//
+input, textarea {
+    @include type-base;
+
+	padding: 0.5rem;
+	border: solid 1px $grey-colour;
+	background: $white;
+
+	&:focus {
+		border-color: $grey-colour-dark;
+		outline: none;
+		box-shadow: rgba($grey-colour-dark, 0.25) 0 1px 4px;
+	}
+}
+
+button {
+    @include type-base;
+
+	padding: 0.5rem 2rem;
+	border: none;
+	border-radius: 2px;
+	color: $white;
+	background: $grey-colour-dark;
+
+	text-transform: uppercase;
+
+	&:hover, &:focus {
+		background-color: $grey-colour;
+		cursor: pointer;
+	}
+}
+
+
+//
+// contained form styling
+//
+
+.form-row {
+	padding: 0 1rem 1rem 1rem;
+
+	label, input, textarea {
+		width: 100%;
+		display: inline-block;
+	}
+	textarea {
+		min-height: $spacing-unit * 4;
+	}
+	@include screen-small {
+		display: flex;
+		label {
+			flex: 33% 1 1;
+		}
+		input, textarea {
+			flex: 100% 1 1;
+		}
+	}
+	@include screen-medium {
+		padding: 0 $spacing-unit $spacing-unit / 2 $spacing-unit;
+	}
+}
+
+.form-submit {
+	justify-content: flex-end;
+}
+
+
+
+//
+// one-off items that don't deserve more thought at the moment
+//
+
+.form-contact-intro {
+	margin: 0 0 4rem 0;
+}
+.form-contact-sent-image {
+	margin: 4rem 0 2rem 0;
+}

@@ -128,17 +128,14 @@
 	code {
 		color: #666;
 		font: 1rem monaco, monospace;
-	}
-	textarea {
-		padding: 0.5rem 1rem;
-		border: solid 1px #ccc;
-		border-radius: 1px;
+		textarea {
+			padding: 0.5rem 1rem;
 
-		background: #eee;
-
-		font: 1rem monaco, monospace;
-		line-height: 1.5;
-		white-space: pre-wrap;
+			background: #eee;
+			font: 1rem monaco, monospace;
+			line-height: 1.5;
+			white-space: pre-wrap;
+		}
 	}
 
 	.project-thumb textarea {
